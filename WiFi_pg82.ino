@@ -1,7 +1,7 @@
 #include <ESP8266WiFi.h>
 
-const char* ssid = "IoT-Lib";
-const char* password = "libiot6909";
+const char* ssid = ""; //your wifi name
+const char* password = ""; //your wifi password
 
 const int red = 15;   //D8 
 const int green = 13; //D7 
