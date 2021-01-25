@@ -116,3 +116,6 @@ void reconnect() {
     }
   }
 }
+
+//Referece:
+//ThingsBoard (2021) Temperature upload over MQTT using ESP8266 and DHT22 sensor (2021) [Source Code]. https://thingsboard.io/docs/samples/esp8266/temperature/.
