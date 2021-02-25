@@ -10,14 +10,12 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 1) Go to this link <https://ifttt.com/> and setup an account.
 2) Go to "Create"
   <img src="https://user-images.githubusercontent.com/56757186/109113658-8b7d7280-7777-11eb-980f-6863fb197c62.jpg" width="1000" height="239">
-  <!-- ![IFTTT_create](https://user-images.githubusercontent.com/56757186/109113658-8b7d7280-7777-11eb-980f-6863fb197c62.jpg) -->
-  
 3) Go to "If This"
-  ![image](https://user-images.githubusercontent.com/56757186/109114059-1b232100-7778-11eb-831a-cc96dd7022d3.png)
+  <img src="https://user-images.githubusercontent.com/56757186/109114059-1b232100-7778-11eb-831a-cc96dd7022d3.png" width="1000" height="239">
 4) Search "Webhook"
-  ![image](https://user-images.githubusercontent.com/56757186/109114504-b87e5500-7778-11eb-9bc0-80bedbf05fdf.png)
+  <img src="https://user-images.githubusercontent.com/56757186/109114504-b87e5500-7778-11eb-9bc0-80bedbf05fdf.png" width="1000" height="239">
 5) Choose "Receive Web Request"
-  ![image](https://user-images.githubusercontent.com/56757186/109114728-ff6c4a80-7778-11eb-8e64-f2a19dce0c4e.png)
+  <img src="https://user-images.githubusercontent.com/56757186/109114728-ff6c4a80-7778-11eb-8e64-f2a19dce0c4e.png" width="1000" height="239">
 6) Type in the event name of your choice. In this example, we will use "temperature"
 7) Click "Create Trigger"
-  ![image](https://user-images.githubusercontent.com/56757186/109114847-2aef3500-7779-11eb-9ae0-33edf43c8d93.png)
+  <img src="https://user-images.githubusercontent.com/56757186/109114847-2aef3500-7779-11eb-9ae0-33edf43c8d93.png" width="1000" height="239">
