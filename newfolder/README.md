@@ -11,4 +11,5 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 2) Go to "Create"
   ![IFTTT_create](https://user-images.githubusercontent.com/56757186/109113658-8b7d7280-7777-11eb-980f-6863fb197c62.jpg)
 3) Go to "If This"
-  
+  ![image](https://user-images.githubusercontent.com/56757186/109114059-1b232100-7778-11eb-831a-cc96dd7022d3.png)
+4) Search "Webhook"
