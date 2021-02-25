@@ -15,7 +15,7 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 4) Search "Webhook"
   <img src="https://user-images.githubusercontent.com/56757186/109114504-b87e5500-7778-11eb-9bc0-80bedbf05fdf.png" width="350" height="239">
 5) Choose "Receive Web Request"
-  <img src="https://user-images.githubusercontent.com/56757186/109114728-ff6c4a80-7778-11eb-8e64-f2a19dce0c4e.png" width="170" height="210">
+  <img src="https://user-images.githubusercontent.com/56757186/109114728-ff6c4a80-7778-11eb-8e64-f2a19dce0c4e.png" width="190" height="230">
 6) Type in the event name of your choice. In this example, we will use "temperature"
 7) Click "Create Trigger"
   <img src="https://user-images.githubusercontent.com/56757186/109114847-2aef3500-7779-11eb-9ae0-33edf43c8d93.png" width="300" height="239">
