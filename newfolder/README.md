@@ -7,5 +7,5 @@ IFTTT stands for "If This Then That", a company that provides a software platfor
 In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. The UI Flow's Python and Blockly Code is in this folder, named _temperature_IFTTT.m5f_ .
 
 ### Setup Tutorial
-1) Go to this link <https://ifttt.com/explore> and setup an account.
-2) 
+1) Go to this link <https://ifttt.com/> and setup an account.
+2) Go to "Create"
