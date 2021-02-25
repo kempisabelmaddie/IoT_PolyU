@@ -9,4 +9,6 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 ### Setup Tutorial
 1) Go to this link <https://ifttt.com/> and setup an account.
 2) Go to "Create"
-  ![image](https://user-images.githubusercontent.com/56757186/109113244-ea8eb780-7776-11eb-927f-334481dbd4b7.png)
+  ![IFTTT_create](https://user-images.githubusercontent.com/56757186/109113658-8b7d7280-7777-11eb-980f-6863fb197c62.jpg)
+3) Go to "If This"
+  
