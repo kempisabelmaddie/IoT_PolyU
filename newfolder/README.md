@@ -11,7 +11,7 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 2) Go to "Create"
   <img src="https://user-images.githubusercontent.com/56757186/109113658-8b7d7280-7777-11eb-980f-6863fb197c62.jpg" width="1000" height="239">
 3) Go to "If This"
-  <img src="https://user-images.githubusercontent.com/56757186/110071077-58119800-7db6-11eb-8e3c-a185b88c86b5.png" width="300" height="239">
+  <img src="https://user-images.githubusercontent.com/56757186/110071077-58119800-7db6-11eb-8e3c-a185b88c86b5.png" width="1000" height="239">
 4) Search "Webhook"
   <img src="https://user-images.githubusercontent.com/56757186/109114504-b87e5500-7778-11eb-9bc0-80bedbf05fdf.png" width="350" height="239">
 5) Choose "Receive Web Request"
