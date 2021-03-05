@@ -19,8 +19,8 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 <https://flow.m5stack.com/> <br/>
 6) Install _M5Burner_ (depending on your computer, choose Windows/MacOS/Linus. This tutorial will use Windows)
 <https://m5stack.com/pages/download> <br/>
-9) Download _temperature_IFTTT.m5f_ from this folder <br/>
-<>
+9) Download _temperature_IFTTT.m5f_ from this link <br/>
+<https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/temperature_IFTTT.m5f>
 10) IFTTT Account <br/>
 <https://ifttt.com/>
 
