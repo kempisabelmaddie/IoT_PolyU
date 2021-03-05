@@ -18,4 +18,4 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
   <img src="https://user-images.githubusercontent.com/56757186/110071532-2b11b500-7db7-11eb-9cd4-1bea8e4e6e33.png" width="1000" height="340">
 6) Type in the event name of your choice. In this example, we will use "temperature"<br/>
 7) Click "Create Trigger"
-  <img src="https://user-images.githubusercontent.com/56757186/109114847-2aef3500-7779-11eb-9ae0-33edf43c8d93.png" width="300" height="239">
+  <img src="https://user-images.githubusercontent.com/56757186/110071781-9fe4ef00-7db7-11eb-8f4e-b3822f45f12d.png" width="1000" height="340">
