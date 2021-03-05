@@ -15,7 +15,7 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 <https://m5stack.com/collections/m5-accessory/products/4pin-buckled-grove-cable>
 4) USB to Type C Data Transfer Cable <br/>
 <https://www.belkin.com/hk/en/p/P-F2CU029/>
-5) _UI Flow V1.7.2 on Browser_ (Desktop Application can be used as well, this tutorial only covers the browser version)
+5) Open _UI Flow V1.7.2 on Browser_ (Desktop Application can be used as well, this tutorial only covers the browser version)
 <https://flow.m5stack.com/> <br/>
 6) Install _M5Burner_ (depending on your computer, choose Windows/MacOS/Linus. This tutorial will use Windows)
 <https://m5stack.com/pages/download> <br/>
@@ -25,6 +25,7 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 <https://ifttt.com/>
 
 ### Project Setup
-1) Go to the folder and find the file "IFTTT_SetUp.md", or open the file by clicking this link: <https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/IFTTT_SetUp.md>
-2) Go to the folder and find the file "M5Burner_SetUp.md", or open the file by clicking this link: <https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/M5Burner_SetUp.md>
+1) Go to the folder and find the file "IFTTT_SetUp.md", or open the file by clicking this link: <br/><https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/IFTTT_SetUp.md>
+2) Go to the folder and find the file "M5Burner_SetUp.md", or open the file by clicking this link: <br/> <https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/M5Burner_SetUp.md>
+3) Go to the folder and find the file "M5Burner_SetUp.md", or open the file by clicking this link: <br/><https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/UIFlow_SetUp.md>
 ### 
