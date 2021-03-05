@@ -8,26 +8,34 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 
 ### Things you need for this project
 1) M5Stack Core
+<https://m5stack.com/collections/m5-core/products/grey-development-core>
 2) M5Stack NCIR Unit
+<https://m5stack.com/products/ncir-sensor-unit?_pos=2&_sid=c47336460&_ss=r&variant=16804757373018>
 3) M5Stack Universal 4Pin Buckled Grove Cable Wire
-4) USB to Type C cable (with information transfer function, charger cables are not applicable)
-5) Install UI Flow
-6) Install M5Burner
-7) Download _temperature_IFTTT.m5f_ from this folder
-8) IFTTT Account
+<https://m5stack.com/collections/m5-accessory/products/4pin-buckled-grove-cable>
+4) USB to Type C Data Transfer Cable
+<https://www.belkin.com/hk/en/p/P-F2CU029/>
+5) UI Flow V1.7.2 on Browser (Desktop Application can be used as well, this tutorial only covers the browser version)
+<https://flow.m5stack.com/>
+6) Install M5Burner (depending on your computer, choose Windows/MacOS/Linus. This tutorial will use Windows)
+<https://m5stack.com/pages/download>
+9) Download _temperature_IFTTT.m5f_ from this folder
+<>
+10) IFTTT Account
+<https://ifttt.com/>
 
 ### IFTTT Setup Tutorial
-1) Go to this link <https://ifttt.com/> and setup an account.
-2) Go to "Create"
+After setting up an account for IFTTT, follow the steps below.
+1) Go to "Create"
   <img src="https://user-images.githubusercontent.com/56757186/109113658-8b7d7280-7777-11eb-980f-6863fb197c62.jpg" width="1000" height="239">
-3) Go to "If This"
+2) Go to "If This"
   <img src="https://user-images.githubusercontent.com/56757186/110071077-58119800-7db6-11eb-8e3c-a185b88c86b5.png" width="1000" height="340">
-4) Search "Webhook"
+3) Search "Webhook"
   <img src="https://user-images.githubusercontent.com/56757186/110071284-b9396b80-7db6-11eb-9187-5b28fb7b4239.png" width="1000" height="340">
-5) Choose "Receive Web Request"
+4) Choose "Receive Web Request"
   <img src="https://user-images.githubusercontent.com/56757186/110071532-2b11b500-7db7-11eb-9cd4-1bea8e4e6e33.png" width="1000" height="340">
-6) Type in the event name of your choice. In this example, we will use "temperature"<br/>
-7) Click "Create Trigger"
+5) Type in the event name of your choice. In this example, we will use "temperature"<br/>
+6) Click "Create Trigger"
   <img src="https://user-images.githubusercontent.com/56757186/110071781-9fe4ef00-7db7-11eb-8f4e-b3822f45f12d.png" width="1000" height="320">
 
 ### Setup Tutorial
