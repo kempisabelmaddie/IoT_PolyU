@@ -58,4 +58,7 @@ After setting up an account for IFTTT, follow the steps below.
   <img src="https://user-images.githubusercontent.com/56757186/110082830-d9722600-7dc8-11eb-8dee-8ef8aa10adae.jpg" width="1000" height="320">
 16) Click on "Documentation"
   <img src="https://user-images.githubusercontent.com/56757186/110083123-44bbf800-7dc9-11eb-899a-6a5b475d0c1a.jpg" width="1000" height="320">
+17) Your key is created! Each key created is unique. I have covered mine in the yellow area due to confidentiality. In the blue highlighted area, change "{event}" to "temperature".
+18) Copy this part: "https://maker.ifttt.com/trigger/temperature/with/key/{yourkey}". We will be using this key later.
+  <img src="https://user-images.githubusercontent.com/56757186/110084483-f90a4e00-7dca-11eb-8f00-33427fe4d8d8.jpg" width="1000" height="320">
 ### 
