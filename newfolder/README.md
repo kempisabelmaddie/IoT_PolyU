@@ -6,6 +6,15 @@ IFTTT stands for "If This Then That", a company that provides a software platfor
 ### How to measure Room Temperature?
 In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. The UI Flow's Python and Blockly Code is in this folder, named _temperature_IFTTT.m5f_ .
 
+### Things you need for this project
+1) M5Stack Core
+2) M5Stack NCIR Unit
+3) M5Stack Universal 4Pin Buckled Grove Cable Wire
+4) USB to Type C cable (with information transfer function, charger cables are not applicable)
+5) Install UI Flow
+6) Install M5Burner
+7) Download _temperature_IFTTT.m5f_ from this folder
+
 ### Setup Tutorial
 1) Go to this link <https://ifttt.com/> and setup an account.
 2) Go to "Create"
@@ -19,3 +28,5 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 6) Type in the event name of your choice. In this example, we will use "temperature"<br/>
 7) Click "Create Trigger"
   <img src="https://user-images.githubusercontent.com/56757186/110071781-9fe4ef00-7db7-11eb-8f4e-b3822f45f12d.png" width="1000" height="320">
+
+### Setup Tutorial
