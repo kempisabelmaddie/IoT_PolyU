@@ -1,3 +1,4 @@
+## IFTTT Web SetUp
 After setting up an account for IFTTT, follow the steps below.
 1) Go to "Create"
   <img src="https://user-images.githubusercontent.com/56757186/109113658-8b7d7280-7777-11eb-980f-6863fb197c62.jpg" width="1000" height="239">
