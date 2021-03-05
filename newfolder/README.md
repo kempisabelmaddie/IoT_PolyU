@@ -14,8 +14,9 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 5) Install UI Flow
 6) Install M5Burner
 7) Download _temperature_IFTTT.m5f_ from this folder
+8) IFTTT Account
 
-### Setup Tutorial
+### IFTTT Setup Tutorial
 1) Go to this link <https://ifttt.com/> and setup an account.
 2) Go to "Create"
   <img src="https://user-images.githubusercontent.com/56757186/109113658-8b7d7280-7777-11eb-980f-6863fb197c62.jpg" width="1000" height="239">
