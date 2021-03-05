@@ -4,4 +4,8 @@
 3) Make sure to choose your COM port in "COM". <br/>
 4) As we are using M5Stack Core, "UIFlow(Core)" will be used. Make sure the version is "v1.7.2-en". <br/>
 5) Press on Configuration to set-up the password. <br/> <img src="https://user-images.githubusercontent.com/56757186/110089943-b26c2200-7dd1-11eb-963a-7005614f187d.jpg" width="577" height="626">
-6) 
+6) In "Start Mode", choose "Internet Mode". <br/> In "WiFi", change the "SSID" and "Password" to the same WiFi configuration you are using on your computer. <br/> Press "Save".<br/> <img src="https://user-images.githubusercontent.com/56757186/110091241-383c9d00-7dd3-11eb-98b6-debf9ee188a8.png" width="596" height="414"> 
+7) Press "Burn" <br/> <img src="https://user-images.githubusercontent.com/56757186/110094113-6cfe2380-7dd6-11eb-840a-ae035269e863.jpg" width="535" height="692">
+8) The "WiFi Setting" Prompt will pop up. Check if the WiFi details are the same as the WiFi your computer is using. If not, re-enter the WiFi details. 
+9) Press "Start" <br/> <img src="https://user-images.githubusercontent.com/56757186/110094568-eeee4c80-7dd6-11eb-8550-fdc930c63ca1.jpg" width="589" height="503"> 
+10) Wait for it to run, until the words "Burn Successfully" shows up. <br/> <img src="https://user-images.githubusercontent.com/56757186/110095282-b4d17a80-7dd7-11eb-8e0e-7b2b5ae8aac0.jpg" width="879" height="309">
