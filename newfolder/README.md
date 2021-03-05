@@ -15,15 +15,16 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 <https://m5stack.com/collections/m5-accessory/products/4pin-buckled-grove-cable>
 4) USB to Type C Data Transfer Cable <br/>
 <https://www.belkin.com/hk/en/p/P-F2CU029/>
-5) UI Flow V1.7.2 on Browser (Desktop Application can be used as well, this tutorial only covers the browser version)
+5) _UI Flow V1.7.2 on Browser_ (Desktop Application can be used as well, this tutorial only covers the browser version)
 <https://flow.m5stack.com/> <br/>
-6) Install M5Burner (depending on your computer, choose Windows/MacOS/Linus. This tutorial will use Windows)
+6) Install _M5Burner_ (depending on your computer, choose Windows/MacOS/Linus. This tutorial will use Windows)
 <https://m5stack.com/pages/download> <br/>
 9) Download _temperature_IFTTT.m5f_ from this folder <br/>
 <>
 10) IFTTT Account <br/>
 <https://ifttt.com/>
 
-### IFTTT Setup Tutorial
-Go to the folder and find the file "IFTTT_SetUp.md", or open the file by clicking this link: <https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/IFTTT_SetUp.md>
+### Project Setup
+1) Go to the folder and find the file "IFTTT_SetUp.md", or open the file by clicking this link: <https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/IFTTT_SetUp.md>
+2) Go to the folder and find the file "M5Burner_SetUp.md", or open the file by clicking this link: <https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/M5Burner_SetUp.md>
 ### 
