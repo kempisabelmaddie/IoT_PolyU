@@ -20,13 +20,13 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 6) Install _M5Burner_ (depending on your computer, choose Windows/MacOS/Linus. This tutorial will use Windows)
 <https://m5stack.com/pages/download> <br/>
 9) Download _temperature_IFTTT.m5f_ from this link <br/>
-<https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/temperature_IFTTT.m5f>
+<https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/temperature_IFTTT.m5f>
 10) IFTTT Account <br/>
 <https://ifttt.com/>
 
 ### Project Setup
-1) Go to the folder and find the file "IFTTT_SetUp.md", or open the file by clicking this link: <br/><https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/IFTTT_SetUp.md>
-2) Go to the folder and find the file "M5Burner_SetUp.md", or open the file by clicking this link: <br/> <https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/M5Burner_SetUp.md>
-3) Go to the folder and find the file "UIFlow_SetUp.md", or open the file by clicking this link: <br/><https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/UIFlow_SetUp.md>
-4) Go to the folder and find the file "TempSensor_SetUp.md", or open the file by clicking this link: <br/><https://github.com/isabelmaddiek/IoT_PolyU/blob/main/newfolder/TempSensor_SetUp.md> 
+1) Go to the folder and find the file "IFTTT_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/IFTTT_SetUp.md>
+2) Go to the folder and find the file "M5Burner_SetUp.md", or open the file by clicking this link: <br/> <https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/M5Burner_SetUp.md>
+3) Go to the folder and find the file "UIFlow_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/UIFlow_SetUp.md>
+4) Go to the folder and find the file "TempSensor_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/TempSensor_SetUp.md> 
 ### 
