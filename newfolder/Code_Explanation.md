@@ -1,6 +1,6 @@
 ## Code Explanation
 ### Flowchart
-
+### Code explanation
 1) Line 11 sets up the WiFi Credentials.
 <img src="https://user-images.githubusercontent.com/80112384/113989775-5d657500-9883-11eb-8f2d-f357cebe976c.png">
 
