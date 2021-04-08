@@ -30,5 +30,5 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 3) Go to the folder and find the file "UIFlow_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/UIFlow_SetUp.md>
 4) Go to the folder and find the file "TempSensor_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/TempSensor_SetUp.md> 
 5) Go to the folder and find the file "Thingsboard_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/Thingsboard_SetUp.md> 
-6) Go to the folder and find the file "CodeExplanation.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/CodeExplanation.md> 
+6) Go to the folder and find the file "Code_Explanation.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/Code_Explanation.md> 
 ### 
