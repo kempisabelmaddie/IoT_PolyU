@@ -6,3 +6,5 @@
 3) See results on your phone, IFTTT has sent a notification to you. You can open the notification on the app.
 <img src="https://user-images.githubusercontent.com/80112384/114010838-21d4a600-9897-11eb-9faa-773216856646.jpg">
 <img src="https://user-images.githubusercontent.com/80112384/114010899-3022c200-9897-11eb-8264-44a3bf2a2f64.jpg">
+4) It is a success! Here is a youtube video for demonstration.
+https://youtu.be/iDBmOskIZCA
