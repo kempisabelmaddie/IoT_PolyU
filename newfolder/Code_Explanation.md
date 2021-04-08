@@ -22,6 +22,6 @@
 7) Line 27 checks if the temperature is bigger than or equal to 25, and whether the value of 'status' is cold or not. 
 </br>If true, it will go to line 28 to 29, line 28 sends a trigger message to IFTTT, notifying the user of the abnormal temperature.
 </br>Otherwise, it will go to line 30 to 31 to check another condition. If the temperature is less than 25 and the value of 'status' is hot, then set 'status' to cold.
-<img src="https://user-images.githubusercontent.com/80112384/113990265-da90ea00-9883-11eb-93d2-1a9b493da58d.png">
+<img src="https://user-images.githubusercontent.com/80112384/113991938-8981f580-9885-11eb-9686-efaf3f97aab4.png">
 
 8) The while loop will be infinite, which will not stop unless you unplug the hardware.
