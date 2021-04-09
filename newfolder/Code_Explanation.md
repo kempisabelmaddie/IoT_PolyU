@@ -1,5 +1,6 @@
 ## Code Explanation
 ### Flowchart
+<img src="https://user-images.githubusercontent.com/80112384/114127710-58f59680-992d-11eb-9d87-d29d74c8a9ef.png">
 ### Code explanation
 1) Line 11 sets up the WiFi Credentials.
 <img src="https://user-images.githubusercontent.com/80112384/113989775-5d657500-9883-11eb-8f2d-f357cebe976c.png">
@@ -16,7 +17,7 @@
 5) Line 20 starts the while loop.
 <img src="https://user-images.githubusercontent.com/80112384/113990068-acaba580-9883-11eb-8c9e-f41eb3dcc127.png">
 
-6) Line 22 retrieves the temperature value from the NCIR unit, Line 23 sets the header message for data transmission, Line 24 sets the temperature data message, Line 25 sends a POST request for data transmission.
+6) Line 22 retrieves the temperature value from the NCIR unit, Line 23 sets the header message for data transmission, Line 24 sets the temperature data message, Line 25 sends a POST request for data transmission to Thingsboard.
 <img src="https://user-images.githubusercontent.com/80112384/113990129-baf9c180-9883-11eb-96e8-6ce5ec824413.png">
 
 7) Line 27 checks if the temperature is bigger than or equal to 25, and whether the value of 'status' is cold or not. 
