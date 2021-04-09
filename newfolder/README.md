@@ -1,4 +1,4 @@
-## If Room Temperature Higher than Certain Degree, Then Send Notification to Mobile Phone through IFTTT
+## If Room Temperature Higher than Certain Degree, </br> Then Send Notification to Mobile Phone through IFTTT
 ### Demo Video
 Click on this YouTube link to watch the demo video.
 https://youtu.be/iDBmOskIZCA
