@@ -9,8 +9,11 @@
 <img src="https://user-images.githubusercontent.com/80112384/113989775-5d657500-9883-11eb-8f2d-f357cebe976c.png">
 
 2) Line 13 sets up the Thingsboard Credentials.
-<img src="https://user-images.githubusercontent.com/80112384/113989866-70784500-9883-11eb-8c98-9c296da8fcd5.png">
-<img align="right" src="https://user-images.githubusercontent.com/80112384/114127984-f05ae980-992d-11eb-85d3-7c8bfccf185f.png">
+<div>
+  <img src="https://user-images.githubusercontent.com/80112384/113989866-70784500-9883-11eb-8c98-9c296da8fcd5.png">
+  <img align="right" src="https://user-images.githubusercontent.com/80112384/114127984-f05ae980-992d-11eb-85d3-7c8bfccf185f.png">
+</div>
+
 
 3) Line 15 sets up the NCIR Unit to the M5Stack.
 <img src="https://user-images.githubusercontent.com/80112384/113989928-7ff78e00-9883-11eb-99dc-be4d8197bdb7.png">
