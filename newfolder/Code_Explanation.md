@@ -5,11 +5,12 @@
 </p>
 
 ### Code explanation
+<div>
 1) Line 11 sets up the WiFi Credentials.
 <img src="https://user-images.githubusercontent.com/80112384/113989775-5d657500-9883-11eb-8f2d-f357cebe976c.png">
 
 2) Line 13 sets up the Thingsboard Credentials.
-<div>
+
   <img src="https://user-images.githubusercontent.com/80112384/113989866-70784500-9883-11eb-8c98-9c296da8fcd5.png">
   <img align="right" src="https://user-images.githubusercontent.com/80112384/114127984-f05ae980-992d-11eb-85d3-7c8bfccf185f.png">
 </div>
