@@ -1,4 +1,4 @@
-## Continue Set UP
+## Continue Set Up
 1) You can copy and paste the code from the txt document</br>
 <https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/Version_1/temperature_IFTTT.m5f>
 3) You can set up your UIFlow by following this link</br>
