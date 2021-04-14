@@ -1,7 +1,10 @@
 ## If Room Temperature Higher than Certain Degree, </br> Then Send Notification to Mobile Phone through IFTTT.</br> Bonus: Send data to Thingsboard
 
 ### Notes
-This tutorial consists of 2 versions: one version only connects notification to IFTTT app, the other version connects to both IFTTT and Thingsboard.
+This tutorial consists of 2 versions:
+Version 1: Connects NCIR to IFTTT, files saved in folder Version_1,
+Version 2: Connects NCIR to IFTTT and Thingsboard folder Version_2,
+Common files are put in this current directory.
 
 ### Demo Video
 Click on this YouTube link to watch the demo video<strong> without</strong>Thingsboard.
