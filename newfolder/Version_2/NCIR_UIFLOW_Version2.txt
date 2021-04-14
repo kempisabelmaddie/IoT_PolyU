@@ -1,0 +1,34 @@
+from m5stack import *
+from m5ui import *
+from uiflow import *
+import wifiCfg
+import urequests
+
+
+setScreenColor(0x222222)
+label0 = M5TextBox(116, 102, "Text", lcd.FONT_DejaVu40, 0xFFFFFF, rotate=0)
+
+wifiCfg.doConnect('IoT-Lib', 'libiot6909')
+
+url = "http://192.168.1.19:8080/api/v1/T2_TEST_TOKEN/telemetry"
+
+ncir0 = unit.get(unit.NCIR, unit.PORTA)
+
+status = 'cold'
+
+
+while True:
+  
+  label0.setText(str(ncir0.temperature))
+  hdconfig = {"Content-Type": "application/json"}
+  dataMsg = '{\"temperature\" : %s}'% (str(ncir0.temperature))
+  response = urequests.request("POST", url, data = dataMsg, json=None, headers = hdconfig, stream = None)
+  
+  if (ncir0.temperature) >= 25 and status == 'cold':
+    r = urequests.post('http://maker.ifttt.com/trigger/temperature/with/key/g9mKwPLM1y4xHylMUvb-llqR7S0x6DaTGbVfjQQ0lIt', )
+    status = 'hot'
+  elif (ncir0.temperature) < 25 and status == 'hot':
+    status = 'cold'
+    
+  wait(5)
+  wait_ms(2)
