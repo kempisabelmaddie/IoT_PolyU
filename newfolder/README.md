@@ -1,10 +1,10 @@
 ## If Room Temperature Higher than Certain Degree, </br> Then Send Notification to Mobile Phone through IFTTT.</br> Bonus: Send data to Thingsboard
 
 ### Notes
-This tutorial consists of 2 versions:
-Version 1: Connects NCIR to IFTTT, files saved in folder Version_1,
-Version 2: Connects NCIR to IFTTT and Thingsboard folder Version_2,
-Common files are put in this current directory.
+This tutorial consists of 2 versions:</br>
+Version 1: Connects NCIR to IFTTT, files saved in folder Version_1,</br>
+Version 2: Connects NCIR to IFTTT and Thingsboard folder Version_2,</br>
+Common files are put in this current directory.</br>
 
 ### Demo Video
 Click on this YouTube link to watch the demo video<strong> without</strong>Thingsboard.
@@ -39,9 +39,4 @@ In this project, we use M5Stack's NCIR sensor unit to measure Room Temperature. 
 ### Project Setup
 1) Go to the folder and find the file "IFTTT_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/IFTTT_SetUp.md>
 2) Go to the folder and find the file "M5Burner_SetUp.md", or open the file by clicking this link: <br/> <https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/M5Burner_SetUp.md>
-3) Go to the folder and find the file "UIFlow_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/UIFlow_SetUp.md>
-4) Go to the folder and find the file "TempSensor_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/TempSensor_SetUp.md> 
-5) Go to the folder and find the file "Thingsboard_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/Thingsboard_SetUp.md> 
-6) Go to the folder and find the file "Demo.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/Demo.md> 
-7) Go to the folder and find the file "Code_Explanation.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/Code_Explanation.md> 
-### 
+3) Go to the folder and find the file "TempSensor_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/TempSensor_SetUp.md>
