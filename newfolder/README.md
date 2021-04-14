@@ -44,10 +44,13 @@ ThingsBoard is an open-source server-side platform that allows you to monitor an
 <https://thingsboard.io/>
 
 ### Project Setup
-1) Go to the folder and find the file "IFTTT_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/IFTTT_SetUp.md>
-2) Go to the folder and find the file "M5Burner_SetUp.md", or open the file by clicking this link: <br/> <https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/M5Burner_SetUp.md>
-3) Go to the folder and find the file "TempSensor_SetUp.md", or open the file by clicking this link: <br/><https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/TempSensor_SetUp.md>
+1) Set up your IFTTT by clicking this link: <br/>
+<https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/IFTTT_SetUp.md>
+2) Set up your M5Stack by clicking this link: <br/>
+<https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/M5Burner_SetUp.md>
+3) Set up your NCIR temperature sensor by clicking this link: <br/>
+<https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/newfolder/TempSensor_SetUp.md>
 4) If you are opting for Version 1, follow this link for the rest of the tutorial.<br/>
 <https://github.com/kempisabelmaddie/IoT_PolyU/tree/main/newfolder/Version_1>
-6) If you are opting for Version 2, follow this link for the rest of the tutorial.<br/>
+5) If you are opting for Version 2, follow this link for the rest of the tutorial.<br/>
 <https://github.com/kempisabelmaddie/IoT_PolyU/tree/main/newfolder/Version_2>
