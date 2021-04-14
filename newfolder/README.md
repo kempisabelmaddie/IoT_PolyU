@@ -3,7 +3,7 @@
 ### Notes
 This tutorial consists of 2 versions:</br>
 Version 1: Connects NCIR to IFTTT, files saved in folder Version_1,</br>
-<https://github.com/kempisabelmaddie/IoT_PolyU/tree/main/newfolder/Version_1>
+<https://github.com/kempisabelmaddie/IoT_PolyU/tree/main/newfolder/Version_1></br>
 Version 2: Connects NCIR to IFTTTand Thingsboard, files saved in folder Version_2,</br>
 <https://github.com/kempisabelmaddie/IoT_PolyU/tree/main/newfolder/Version_2>
 Common files are put in this current directory.</br>
