@@ -1,4 +1,7 @@
 ## If Room Temperature Higher than Certain Degree, </br> Then Send Notification to Mobile Phone through IFTTT.</br> Bonus: Send data to Thingsboard
+
+### Notes
+
 ### Demo Video
 Click on this YouTube link to watch the demo video<strong> without</strong>Thingsboard.
 https://youtu.be/iDBmOskIZCA
