@@ -48,3 +48,6 @@ This part will be explained in part <em> 3) Timetable input </em>
 
 ## 4) Change display
 ## 5) Turn off Button
+
+[< Back: Tutorial 1 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial1.md)\
+[> Next: Tutorial 3 - Google Sheets](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial3.md)
