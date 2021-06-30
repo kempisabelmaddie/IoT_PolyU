@@ -1,4 +1,2 @@
 # Tutorial 1 - Clock Display
-1) Clock display
-2) Alarm setup
-3) Google Sheets setup
+First and foremost, a watch must have a time/clock display. The clock display can be easily done by using the given m5stick C real-time clock code on Arduino.
