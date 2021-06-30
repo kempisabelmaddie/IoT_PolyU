@@ -1,7 +1,7 @@
 # Tutorial 0 - M5Stick C & Arduino setup
 
 Follow this tutorial to setup the M5Stick C on Arduino for all OS (Operating Systems).\
-https://github.com/m5stack/m5-docs/tree/master/docs/en/quick_start/m5stickc \
+https://github.com/m5stack/m5-docs/tree/master/docs/en/quick_start/m5stickc 
 
 Note: This tutorial uses Windows OS.
 
