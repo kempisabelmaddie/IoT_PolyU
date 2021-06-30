@@ -5,4 +5,4 @@ https://github.com/m5stack/m5-docs/tree/master/docs/en/quick_start/m5stickc
 
 Note: This tutorial uses Windows OS.
 
-Next: Tutorial 1 - [Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial1.md).
+[> Next: Tutorial 1 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial1.md).
