@@ -7,5 +7,5 @@ A new window with the file name "RTC" should prompt up. Save this file at your p
 ![image](https://user-images.githubusercontent.com/80112384/123926700-b9d9bb80-d9be-11eb-9bdb-e3ebdf02c129.png)
 
 
-< Back: [Arduino Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial0.md)\
-Next: > [Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial2.md)
+< Back: Tutorial 0 [Arduino Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial0.md)\
+Next: Tutorial 2 > [Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial2.md)
