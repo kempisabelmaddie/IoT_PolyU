@@ -46,6 +46,15 @@ This part will be explained in part <em> 3) Timetable input </em>
 
 ## 3) Timetable input
 
+### 1) Add New Event
+One event is set to <strong>one</strong> certain <strong>time</strong>, but can occur at <strong>multiple days</strong>.
+
+### 2) Set the time (When time turns to...)
+
+### 3) Set Pin Value (...then set pin value to...)
+
+### 4) Repeat this process for the rest of the schedule
+
 ## 4) Change display
 ## 5) Turn off Button
 
