@@ -5,7 +5,7 @@ As an example, the elderly Isabel has <strong>high cholesterol</strong> and <str
 <strong>Monday Wednesday @13:00 glucose pill x1</strong> \
 <strong>Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1 </strong>
 
-In order for the smartwatch to light up and receive the appropriate message, we will need to use the app <strong>Blynk</strong> to make a schedule.\
+In order for the smartwatch to light up and receive the appropriate message, we will need to use the app <strong>Blynk</strong> to make a schedule.
 
 ## 1) Blynk install and setup
 Note: This tutorial only works for Android smartphone users.\
@@ -67,12 +67,12 @@ Then, click on the time widget and choose 1pm (13:00) for taking the glucose pil
 When the time turns to 13:00, it needs to send a message to the smartwatch, indicating it is time to take the glucose pill. \
 In Blynk, we use the mechanism of setting a <strong>virtual</strong> pin value to simulate the action of sending a message.\
 Hence, we need to set the virtual pin <strong>V0</strong> value. \
-![setpin](https://user-images.githubusercontent.com/80112384/124081804-8f4f3780-da7e-11eb-87de-10373533c63b.gif) \
+![setpin](https://user-images.githubusercontent.com/80112384/124081804-8f4f3780-da7e-11eb-87de-10373533c63b.gif) 
 
-Each pin value(number) indicates different pills: \
+Each pin value(number) indicates different pills: 
 
 "1" means glucose pills \
-"2" means cholesterol pills \
+"2" means cholesterol pills 
 
 Right now, we are setting the time for <strong>glucose pill</strong>, so we set the message to <strong>"1"</strong>. \
 ![to1](https://user-images.githubusercontent.com/80112384/124083090-0cc77780-da80-11eb-87cd-54ec3b561436.gif)
