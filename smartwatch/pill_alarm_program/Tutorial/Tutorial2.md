@@ -78,10 +78,9 @@ Right now, we are setting the time for <strong>glucose pill</strong>, so we set 
 ![to1](https://user-images.githubusercontent.com/80112384/124083090-0cc77780-da80-11eb-87cd-54ec3b561436.gif)
 
 ### 4) Repeat this process for the rest of the schedule
-The time and date for taking glucose pill is set! Now repeat steps 1 to 3 for the cholesterol pills.
+The time and date for taking glucose pill is set! Now repeat steps 1 to 3 for the cholesterol pills. \
 ~~Monday Wednesday @13:00 glucose pill x1~~ \
-Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1 \
-
+Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1 
 
 ## 4) Change display
 ## 5) Turn off Button
