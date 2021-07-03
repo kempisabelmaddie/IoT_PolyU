@@ -82,8 +82,36 @@ The time and date for taking glucose pill is set! Now repeat steps 1 to 3 for th
 ~~Monday Wednesday @13:00 glucose pill x1~~ \
 <strong>Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1</strong> 
 
-## 4) Change display
-## 5) Turn off Button
+## 5) Connect Arduino to Blynk
+Include the Blynk library in Arduino by going to <strong>Sketch > Include Library > Manage Libraries</strong>.
+Type "Blynk" and press "Install".
+![image](https://user-images.githubusercontent.com/80112384/124348673-d4f63680-dc1d-11eb-89c0-352bdc4d6ddf.png)\
+If you are unable to find the "Blynk" library, follow this YouTube video to install it.\
+https://www.youtube.com/watch?v=5lH19LrQl5Y \
+Then, we need to connect Arduino to Blynk by WiFi, so we need to include their library headers, WiFi credentials and Blynk's authentication token.
+Copy and paste the following code to Arduino, remember to change "YourAuthToken", "YourNetworkName" and "YourPassword" to your own's.
+```Arduino
+#define BLYNK_PRINT Serial
+#include <WiFi.h>
+#include <WiFiClient.h>
+#include <BlynkSimpleEsp32.h>
+
+// You should get Auth Token in the Blynk App.
+// Go to the Project Settings (nut icon).
+char auth[] = "YourAuthToken";
+
+// Your WiFi credentials.
+// Set password to "" for open networks.
+char ssid[] = "YourNetworkName";
+char pass[] = "YourPassword";
+```
+![image](https://user-images.githubusercontent.com/80112384/124349061-e0e2f800-dc1f-11eb-9314-011b99534187.png)
+
+
+The next step is to instruct Arduino to read notifications from the Blynk App. To do so, Arduino needs to read the virtual pins from Blynk App, so we will 
+
+## 6) Change Display
+## 7) Turn off Button
 
 [< Back: Tutorial 1 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial1.md)\
 [> Next: Tutorial 3 - Google Sheets](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial3.md)
