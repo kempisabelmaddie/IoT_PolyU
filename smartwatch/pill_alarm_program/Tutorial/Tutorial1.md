@@ -25,17 +25,20 @@ The time needs to be set up, as it may not be the correct time according to your
 
 ![image](https://user-images.githubusercontent.com/80112384/123929071-0faf6300-d9c1-11eb-8530-ef8be467cfd3.png) \
 From the above image:
-The hour is set to 18(meaning it is 6pm), the minute is set to 56, the second is set to 10. The time is 18:56:10. If this is not the current time at your location, change the numbers mentioned. \
+The hour is set to 18(meaning it is 6pm), the minute is set to 56, the second is set to 10. The time is 18:56:10. If this is not the current time at your location, change the numbers mentioned.
 
-In my opinion, the weekday set as a number is not clear enough. Therefore, I would change the display to the names of the weekday. For example, displayed as "Monday", "Tuesday", "Wednesday" etc. \
+In my opinion, the weekday set as a number is not clear enough. Therefore, I would change the display to the names of the weekday. For example, displayed as "Monday", "Tuesday", "Wednesday" etc. 
 
-Copy and paste the following lines in this part of the code:\
-\
-<strong>String weekdays[7]={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};</strong>
+Copy and paste the following lines in this part of the code:
+
+```arduino
+String weekdays[7]={"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
+```
 ![image](https://user-images.githubusercontent.com/80112384/123934938-581d4f80-d9c6-11eb-8d79-1be3cddf4dde.png)
-\
-\
-<strong>M5.Lcd.printf("Weekday: %s\n",weekdays[RTC_DateStruct.WeekDay]);</strong>
+
+```arduino
+M5.Lcd.printf("Weekday: %s\n",weekdays[RTC_DateStruct.WeekDay]);
+```
 ![image](https://user-images.githubusercontent.com/80112384/123935660-00331880-d9c7-11eb-878d-9a365fa0c1b0.png)
 
 The date weekday is set to(meaning it is Wednesday), the month is set to 3(meaning it is March), the date is set to 22, the year is set to 2019. The date is the 22nd of March, 2019. If this is not the current date of your location, change the numbers mentioned as well.
