@@ -88,8 +88,8 @@ Type "Blynk" and press "Install".
 ![image](https://user-images.githubusercontent.com/80112384/124348673-d4f63680-dc1d-11eb-89c0-352bdc4d6ddf.png)\
 If you are unable to find the "Blynk" library, follow this YouTube video to install it.\
 https://www.youtube.com/watch?v=5lH19LrQl5Y \
-Then, we need to connect Arduino to Blynk by WiFi, so we need to include their library headers, WiFi credentials and Blynk's authentication token.
-Copy and paste the following code to Arduino, remember to change "YourAuthToken", "YourNetworkName" and "YourPassword" to your own's.
+Then, we need to connect Arduino to Blynk by WiFi, so we need to include their library headers, WiFi credentials and Blynk's authentication token.\
+Copy and paste the following code to Arduino, <strong>remember to change "YourAuthToken", "YourNetworkName" and "YourPassword" to your own's</strong>.
 ```Arduino
 #define BLYNK_PRINT Serial
 #include <WiFi.h>
