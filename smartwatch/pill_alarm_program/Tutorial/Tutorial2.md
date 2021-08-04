@@ -106,7 +106,15 @@ char ssid[] = "YourNetworkName";
 char pass[] = "YourPassword";
 ```
 ![image](https://user-images.githubusercontent.com/80112384/124349061-e0e2f800-dc1f-11eb-9314-011b99534187.png)
-
+Taking connecting your phone to the WiFi as an example, without pressing the "OK" or "Connect" button on your phone, even after you typed the WiFi password, it will not connect to the internet. Similarly, if you only added the WiFi credentials and authentication token, but did not add them in the "setup" and "loop" function, it will not connect to the internet either. Add the highlighted code to your current code:
+```Arduino
+Blynk.begin(auth, ssid, pass);
+```
+![image](https://user-images.githubusercontent.com/80112384/128125954-c83ee890-5075-4dae-bf9f-80d834da42da.png)
+```Arduino
+Blynk.run();
+```
+![image](https://user-images.githubusercontent.com/80112384/128125997-1ce7547e-d8ef-4e0a-bca7-5fecb9cb5ea5.png)
 
 The next step is to instruct Arduino to read notifications from the Blynk App. To do so, Arduino needs to read the virtual pins from Blynk App, so we will 
 
