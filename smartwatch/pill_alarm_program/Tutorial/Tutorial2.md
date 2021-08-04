@@ -1,4 +1,4 @@
-# Tutorial 2 - Alarm Setup
+# Tutorial 2 - Blynk Setup
 The smartwatch will light up to notify pill-taking time, informing the elderly which pill to take. After the button is pressed, the light will turn off, until the next alarm goes off again.
 
 As an example, the elderly Isabel has <strong>high cholesterol</strong> and <strong>glucose level</strong>. Her pill-taking schedule is as follow:\
@@ -18,11 +18,6 @@ After receiving your authentication token, we add the widgets to the empty canva
 1) Eventor x 1
 2) Labeled Value x 2
 3) Value Display x 2
-4) Level H x 2 
-
-Total widget balance needed: 2,100
-
-Note: If you do not have enough energy balance to select all the widgets, not all the widgets are necessary as some of them are used for better UI design. Yet, the <strong>Eventor</strong> is a must. If you do not know which to choose, continue reading and choose the widgets you would like to keep.
 
 To open each widget settings, click on the widget to prompt the settings page.
 Follow the settings below:
@@ -37,11 +32,7 @@ This part will be explained in part <em> 3) Timetable input </em>
 ![Screenshot_2021-06-30-19-27-50-606_cc blynk](https://user-images.githubusercontent.com/80112384/123954317-d7b51980-d9da-11eb-9cba-c000266345fd.jpg)
 ![Screenshot_2021-06-30-19-40-41-770_cc blynk](https://user-images.githubusercontent.com/80112384/123954839-704b9980-d9db-11eb-933e-2d107f1a66ef.jpg)
 
-### 4) Level H
-![Screenshot_2021-06-30-19-28-14-669_cc blynk](https://user-images.githubusercontent.com/80112384/123955072-c91b3200-d9db-11eb-81de-5213d98a2839.jpg)
-![Screenshot_2021-06-30-19-28-23-671_cc blynk](https://user-images.githubusercontent.com/80112384/123955080-ca4c5f00-d9db-11eb-99ad-f706dc79f250.jpg)
-
-### Final canvas layout
+### Final canvas layout (change)
 ![Screenshot_2021-06-21-11-16-27-535_cc blynk (1)](https://user-images.githubusercontent.com/80112384/123961097-96286c80-d9e2-11eb-8d45-8eda301e1ca6.jpg)
 
 ## 3) Timetable input
@@ -116,10 +107,29 @@ Blynk.run();
 ```
 ![image](https://user-images.githubusercontent.com/80112384/128125997-1ce7547e-d8ef-4e0a-bca7-5fecb9cb5ea5.png)
 
-The next step is to instruct Arduino to read notifications from the Blynk App. To do so, Arduino needs to read the virtual pins from Blynk App, so we will 
+In order to be notified on whether your Blynk is connected to the M5Stick device, you can go to the Blynk settings, slide down to the "Notify when App is connected" and turn it on.
+### add GIF here
 
-## 6) Change Display
-## 7) Turn off Button
+If connected, Blynk should notify you with the message "Device is connected"
+### add picture here
+If not, this message would be showed
+### add picture here
+There are several reasons as to why you are unable to connect to the internet, check your WiFi name, password and Blynk credentials.
+
+## 6) Display Date and Time on Blynk
+Next, we would want to display the date and time on the Blynk app. Instead of using the real-time clock widget provided in Blynk, I prefer to display it with the value display widgets. Moreover, the date and time is not automatically provided, we must program it in Arduino for it to show. 
+In the 5th section, we set the time and date value display widgets with "virtual pin 1" and "virtual pin 2" respectively. Therefore, in our Arduino code, we match the time to pin V1, and date to pin V2.
+Copy and paste the code below, and add it to the respective location:
+```Arduino
+String currentTime = "\xF0\x9F\x95\x92" + String(RTC_TimeStruct.Hours) + ":" + String(RTC_TimeStruct.Minutes) + ":" + String(RTC_TimeStruct.Seconds);
+String currentDate = "\xF0\x9F\x93\x85" + String(RTC_DateStruct.Date) + "/" + String(RTC_DateStruct.Month)+ "/" +String(RTC_DateStruct.Year);
+Blynk.virtualWrite(V1, currentTime);                                    
+Blynk.virtualWrite(V2, currentDate);
+```
+![image](https://user-images.githubusercontent.com/80112384/128163279-93154657-0931-420b-8dc7-33670e0ddb84.png)
+
+Now, the time and date should be displayed on Blynk.
+### add image here.
 
 [< Back: Tutorial 1 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial1.md)\
-[> Next: Tutorial 3 - Google Sheets](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial3.md)
+[> Next: Tutorial 3 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial3.md)
