@@ -18,6 +18,7 @@ After receiving your authentication token, we add the widgets to the empty canva
 1) Eventor x 1
 2) Labeled Value x 2
 3) Value Display x 2
+4) Level H x 1
 
 To open each widget settings, click on the widget to prompt the settings page.
 Follow the settings below:
@@ -32,7 +33,10 @@ This part will be explained in part <em> 3) Timetable input </em>
 ![Screenshot_2021-06-30-19-27-50-606_cc blynk](https://user-images.githubusercontent.com/80112384/123954317-d7b51980-d9da-11eb-9cba-c000266345fd.jpg)
 ![Screenshot_2021-06-30-19-40-41-770_cc blynk](https://user-images.githubusercontent.com/80112384/123954839-704b9980-d9db-11eb-933e-2d107f1a66ef.jpg)
 
-### Final canvas layout (change)
+### 4) Level H
+
+### CHANGE LAYOUT
+### Final canvas layout
 ![Screenshot_2021-06-21-11-16-27-535_cc blynk (1)](https://user-images.githubusercontent.com/80112384/123961097-96286c80-d9e2-11eb-8d45-8eda301e1ca6.jpg)
 
 ## 3) Timetable input
@@ -101,11 +105,12 @@ Taking connecting your phone to the WiFi as an example, without pressing the "OK
 ```Arduino
 Blynk.begin(auth, ssid, pass);
 ```
-![image](https://user-images.githubusercontent.com/80112384/128125954-c83ee890-5075-4dae-bf9f-80d834da42da.png)
+![image](https://user-images.githubusercontent.com/80112384/128164891-4a20523d-4a4b-46c1-8c68-335eb7560e16.png)
+
 ```Arduino
 Blynk.run();
 ```
-![image](https://user-images.githubusercontent.com/80112384/128125997-1ce7547e-d8ef-4e0a-bca7-5fecb9cb5ea5.png)
+![image](https://user-images.githubusercontent.com/80112384/128165035-abe692ef-4b12-40ce-9e0a-8c944fc19d41.png)
 
 In order to be notified on whether your Blynk is connected to the M5Stick device, you can go to the Blynk settings, slide down to the "Notify when App is connected" and turn it on.
 ### add GIF here
