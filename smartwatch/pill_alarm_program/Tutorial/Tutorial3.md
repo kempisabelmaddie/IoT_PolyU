@@ -102,9 +102,63 @@ delay(5000);
 ![image](https://user-images.githubusercontent.com/80112384/128208194-45a28512-d277-4217-91e1-30c77bab07ff.png)
 
 
-## 3) Turn Buzzer on (LATER)
+## 3) Turn speaker on
+Having the red LED light may not be enough to attract the attention of the user/elderly. With sound, the user can hear the alarm even from a distance. Hence, the speaker unit is attached to the watch, and a melody is played whenever it is time for medicine. The following part is adapted from these 2 links:
+
+1) M5StickC Github repository: arduino code for speaker
 https://github.com/m5stack/M5StickC/blob/master/examples/Hat/SPEAKER/SPEAKER.ino
+
+2) M5Stack UIFlow documentation
 https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/UIFlow-StickC-Book-English.pdf
+
+
+### 3.1) PWM to make sounds
+PWM stands for Pulse Width Modulation, it is primarily used to control the intensity of an LED light bulb. However, it can also be applied to make varying sounds with a speaker. From the 1st link above, we use the PWM LED functions to program the speaker. Following the link, these lines of code are inserted for variable declarations:
+```Arduino
+const int servo_pin = 26;
+int freq = 50;
+int ledChannel = 0;
+int resolution = 10;
+extern const unsigned char m5stack_startup_music[];
+```
+![image](https://user-images.githubusercontent.com/80112384/128364353-3bc8b12d-72f6-4d69-a004-14d6c15abfd1.png)
+
+In the "setup" function, these lines of code are needed too:
+```Arduino
+ledcSetup(ledChannel, freq, resolution);
+ledcAttachPin(servo_pin, ledChannel);
+ledcWrite(ledChannel, 256);//0°
+```
+![image](https://user-images.githubusercontent.com/80112384/128364759-47cecc41-799c-4332-9f28-a9181bb23ede.png)
+
+
+### 3.2) Make a melody
+Next, a pleasing melody should be created for the alarm ringtone. As the sound is created by frequency, each musical notes has its own frequency in Hertz(Hz). To find out the frequency for certain notes, it is fortunate that M5Stack published a documentation with it. It does not include all notes, but it has some basic ones. This can be found in the 2nd link above.
+![image](https://user-images.githubusercontent.com/80112384/128365737-65990457-d75b-467b-8e0b-ff8c2d5e6c65.png)
+
+The melody created in this tutorial is 
+Middle F
+Middle A
+High C
+High D
+
+This melody is only played when it is time to take medicine. The melody will play contiuously inside the "loop" function.
+
+```Arduino
+else{
+    ledcWriteTone(ledChannel, 349); //middle F
+    delay(500);
+    ledcWriteTone(ledChannel, 440); //middle A
+    delay(500);
+    ledcWriteTone(ledChannel, 523); //high C
+    delay(500);
+    ledcWriteTone(ledChannel, 698); //high D
+    delay(1000);
+}
+```
+![image](https://user-images.githubusercontent.com/80112384/128366687-2fb74453-a267-422f-a555-d26e13fbb2a1.png)
+
+### add gif/video/image here
 
 ## 4) Turn off button
 
