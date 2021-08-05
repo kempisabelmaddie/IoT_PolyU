@@ -103,6 +103,8 @@ delay(5000);
 
 
 ## 3) Turn Buzzer on (LATER)
+https://github.com/m5stack/M5StickC/blob/master/examples/Hat/SPEAKER/SPEAKER.ino
+https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/UIFlow-StickC-Book-English.pdf
 
 ## 4) Turn off button
 
