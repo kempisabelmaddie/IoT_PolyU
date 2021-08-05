@@ -63,6 +63,8 @@ if (displayer == 0){
 ```
 ![image](https://user-images.githubusercontent.com/80112384/128212677-ef2dcd7e-2503-4c0b-97fc-27ec36071f82.png)
 
+### add gif/image here
+
 
 ## 2) Turn Red Light on 
 For better user experience, adding a red light for illumination can attract the user's attention more. 
@@ -90,7 +92,7 @@ pinMode(REDLED, OUTPUT);
 
 ### 2.3) Turn on light when alarm is on
 
-According to the official Arduino website, we use "digitalWrite" to turn the LED light on and off, the source can be found here:
+According to the official Arduino website, we use "digitalWrite" to turn the LED light on and off. LOW means on, HIGH means off. The source can be found here:
 https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/
 
 Write the following 2 lines to the BLYNK_WRITE function:
@@ -101,6 +103,7 @@ delay(5000);
 ```
 ![image](https://user-images.githubusercontent.com/80112384/128208194-45a28512-d277-4217-91e1-30c77bab07ff.png)
 
+### add gif/image here
 
 ## 3) Turn speaker on
 Having the red LED light may not be enough to attract the attention of the user/elderly. With sound, the user can hear the alarm even from a distance. Hence, the speaker unit is attached to the watch, and a melody is played whenever it is time for medicine. The following part is adapted from these 2 links:
@@ -161,7 +164,7 @@ else{
 ### add gif/video/image here
 
 ## 4) Turn off button
-
+https://community.m5stack.com/topic/61/noise-on-speaker
 
 [< Back: Tutorial 2 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial2.md)\
 [> Next: Tutorial 4 - Google Sheets](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial4.md)
