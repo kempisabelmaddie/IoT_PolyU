@@ -187,7 +187,7 @@ if (M5.BtnA.wasReleased()){
 
 
 ### 4.2) Turn off LED light and sound
-Here, the LED light and sound will be turned off when it returns from reminder to clock display. To turn off the light, LED light settings is set to "HIGH" with "digitalWrite". To turn off the sound, the frequency is set to 0 with "ledcWriteTone".
+Here, the LED light and sound will be turned off when it returns from reminder to clock display. To turn off the light, LED light settings is set to "HIGH" with "digitalWrite". To turn off the sound, the frequency is set to 0 with "ledcWriteTone". This is added to the block of code for the clock display settings.
 
 ```Arduino
 digitalWrite(REDLED, HIGH);
