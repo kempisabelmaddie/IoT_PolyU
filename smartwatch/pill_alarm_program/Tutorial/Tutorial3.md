@@ -136,7 +136,7 @@ ledcWrite(ledChannel, 256);//0°
 
 
 ### 3.2) Make a melody
-Next, a pleasing melody should be created for the alarm ringtone. As the sound is created by frequency, each musical notes has its own frequency in Hertz(Hz). To find out the frequency for certain notes, it is fortunate that M5Stack published a documentation with it. It does not include all notes, but it has some basic ones. This can be found in the 2nd link above.
+Next, a pleasant melody should be created for the alarm ringtone. As the sound is created by frequency, each musical notes has its own frequency in Hertz(Hz). To find out the frequency for certain notes, it is fortunate that M5Stack published a documentation with it. It does not include all notes, but it has some basic ones. This can be found in the 2nd link above.
 ![image](https://user-images.githubusercontent.com/80112384/128365737-65990457-d75b-467b-8e0b-ff8c2d5e6c65.png)
 
 The melody created in this tutorial is 
@@ -164,7 +164,42 @@ else{
 ### add gif/video/image here
 
 ## 4) Turn off button
+After the user is reminded to take the medicine, the user should be able to turn off the sound and LED light, returning back to the clock display. In doing so, the program should include an OFF button for this function. 
+
+### 4.1) Press OFF button to return to clock display
+There are 3 buttons on M5StickC: Button A, Button B, and Power ON/OFF button. In this tutorial, we use Button A as our OFF button to return to the clock display. To find the location of each button, refer to the picture below:
+
+![68747470733a2f2f6d35737461636b2e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f696d6167652f6d352d646f63735f636f6e74656e742f636f72652f6d35737469636b635f30312e706e67](https://user-images.githubusercontent.com/80112384/128457495-d2654f59-7646-44c7-a90f-d65b671ae137.png)
+
+In Arduino, it checks whether button A is pressed in every loop in the "loop" function. If true, then return to clock display. As mentioned in the "Change Watch Display" section in this tutorial, if the variable "displayer" is set to 0, it will show the clock display. The code below does exactly this once the off button is pressed.
+
+```Arduino
+if (M5.BtnA.wasReleased()){
+  M5.Lcd.fillScreen(TFT_BLACK);
+  M5.Lcd.setCursor(0, 0);
+  displayer = 0;
+  delay(3000);
+}
+```
+![image](https://user-images.githubusercontent.com/80112384/128457991-376812ca-2443-47d6-86f3-985b739710a9.png)
+
+### add gif/image here
+
+
+### 4.2) Turn off LED light and sound
+Here, the LED light and sound will be turned off when it returns from reminder to clock display. To turn off the light, LED light settings is set to "HIGH" with "digitalWrite". To turn off the sound, the frequency is set to 0 with "ledcWriteTone".
+
+```Arduino
+digitalWrite(REDLED, HIGH);
+ledcWriteTone(ledChannel, 0);
+delay(1000);
+```
+![image](https://user-images.githubusercontent.com/80112384/128461434-ada2180d-fa19-4ac2-8766-410e400b53a8.png)
+This is a reference on how to turn off the speaker sound:
 https://community.m5stack.com/topic/61/noise-on-speaker
+
+### add gif/image/video here
+
 
 [< Back: Tutorial 2 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial2.md)\
 [> Next: Tutorial 4 - Google Sheets](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/pill_alarm_program/Tutorial/Tutorial4.md)
