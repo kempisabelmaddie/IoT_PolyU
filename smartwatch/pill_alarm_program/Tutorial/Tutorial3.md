@@ -185,6 +185,17 @@ if (M5.BtnA.wasReleased()){
 ```
 ![image](https://user-images.githubusercontent.com/80112384/128457991-376812ca-2443-47d6-86f3-985b739710a9.png)
 
+Also, add the "else" statement to the melody playing part
+
+```Arduino
+else{
+  //melody playing code
+}
+```
+
+![image](https://user-images.githubusercontent.com/80112384/128470615-99704a31-168c-448a-a1ce-e0915e6f507c.png)
+
+
 ### add gif/image here
 
 
