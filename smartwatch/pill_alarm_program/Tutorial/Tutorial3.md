@@ -156,10 +156,12 @@ else{
     ledcWriteTone(ledChannel, 523); //high C
     delay(500);
     ledcWriteTone(ledChannel, 698); //high D
-    delay(1000);
+    delay(500);
+    ledcWriteTone(ledChannel, 0); //muted
+    delay(500);
 }
 ```
-![image](https://user-images.githubusercontent.com/80112384/128366687-2fb74453-a267-422f-a555-d26e13fbb2a1.png)
+![image](https://user-images.githubusercontent.com/80112384/128470246-bb576049-1814-4fed-9722-dfe27dfa1f36.png)
 
 ### add gif/video/image here
 
