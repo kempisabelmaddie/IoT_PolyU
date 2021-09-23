@@ -123,3 +123,64 @@ To identify your excel sheet, the deployment ID needs to be added.
 String GOOGLE_SCRIPT_ID = "your deployment ID";
 ```
 ![image](https://user-images.githubusercontent.com/80112384/134526331-94c9c486-14c4-4dc3-aec7-b336e9f306f4.png)
+
+### 3) Add Google Sheets Root certificate
+Root certificate is for Google to authenticate your code. Paste the following: 
+```Arduino
+const char * root_ca=\
+"-----BEGIN CERTIFICATE-----\n" \
+"MIIDujCCAqKgAwIBAgILBAAAAAABD4Ym5g0wDQYJKoZIhvcNAQEFBQAwTDEgMB4G\n" \
+"A1UECxMXR2xvYmFsU2lnbiBSb290IENBIC0gUjIxEzARBgNVBAoTCkdsb2JhbFNp\n" \
+"Z24xEzARBgNVBAMTCkdsb2JhbFNpZ24wHhcNMDYxMjE1MDgwMDAwWhcNMjExMjE1\n" \
+"MDgwMDAwWjBMMSAwHgYDVQQLExdHbG9iYWxTaWduIFJvb3QgQ0EgLSBSMjETMBEG\n" \
+"A1UEChMKR2xvYmFsU2lnbjETMBEGA1UEAxMKR2xvYmFsU2lnbjCCASIwDQYJKoZI\n" \
+"hvcNAQEBBQADggEPADCCAQoCggEBAKbPJA6+Lm8omUVCxKs+IVSbC9N/hHD6ErPL\n" \
+"v4dfxn+G07IwXNb9rfF73OX4YJYJkhD10FPe+3t+c4isUoh7SqbKSaZeqKeMWhG8\n" \
+"eoLrvozps6yWJQeXSpkqBy+0Hne/ig+1AnwblrjFuTosvNYSuetZfeLQBoZfXklq\n" \
+"tTleiDTsvHgMCJiEbKjNS7SgfQx5TfC4LcshytVsW33hoCmEofnTlEnLJGKRILzd\n" \
+"C9XZzPnqJworc5HGnRusyMvo4KD0L5CLTfuwNhv2GXqF4G3yYROIXJ/gkwpRl4pa\n" \
+"zq+r1feqCapgvdzZX99yqWATXgAByUr6P6TqBwMhAo6CygPCm48CAwEAAaOBnDCB\n" \
+"mTAOBgNVHQ8BAf8EBAMCAQYwDwYDVR0TAQH/BAUwAwEB/zAdBgNVHQ4EFgQUm+IH\n" \
+"V2ccHsBqBt5ZtJot39wZhi4wNgYDVR0fBC8wLTAroCmgJ4YlaHR0cDovL2NybC5n\n" \
+"bG9iYWxzaWduLm5ldC9yb290LXIyLmNybDAfBgNVHSMEGDAWgBSb4gdXZxwewGoG\n" \
+"3lm0mi3f3BmGLjANBgkqhkiG9w0BAQUFAAOCAQEAmYFThxxol4aR7OBKuEQLq4Gs\n" \
+"J0/WwbgcQ3izDJr86iw8bmEbTUsp9Z8FHSbBuOmDAGJFtqkIk7mpM0sYmsL4h4hO\n" \
+"291xNBrBVNpGP+DTKqttVCL1OmLNIG+6KYnX3ZHu01yiPqFbQfXf5WRDLenVOavS\n" \
+"ot+3i9DAgBkcRcAtjOj4LaR0VknFBbVPFd5uRHg5h6h+u/N5GJG79G+dwfCMNYxd\n" \
+"AfvDbbnvRG15RjF+Cv6pgsH/76tuIMRQyV+dTZsXjAzlAcmgQWpzU/qlULRuJQ/7\n" \
+"TBj0/VLZjmmx6BEP3ojY+x1J96relc8geMJgEtslQIxq/H5COEBkEveegeGTLg==\n" \
+"-----END CERTIFICATE-----\n";
+```
+![image](https://user-images.githubusercontent.com/80112384/134527710-f79be465-5a85-4387-aaac-1e1d9e77f4b2.png)
+
+### 4) Create a new WiFi Client
+To create a new WiFi client, add this to your Arduino code.
+```Arduino
+WiFiClientSecure client;
+```
+![image](https://user-images.githubusercontent.com/80112384/134528211-46dc3945-d585-4db3-b689-571f27c0277c.png)
+
+### 5) Send data to Google Sheets
+To send data to Google sheets, paste the "sendData" function, below the loop function:
+```Arduino
+void sendData(String params) {
+   HTTPClient http;
+   String url="https://script.google.com/macros/s/"+GOOGLE_SCRIPT_ID+"/exec?"+params;
+   Serial.print(url);
+    Serial.print("Making a request");
+    http.begin(url, root_ca); //Specify the URL and certificate
+    int httpCode = http.GET();  
+    http.end();
+    Serial.println(": done "+httpCode);
+}
+```
+![image](https://user-images.githubusercontent.com/80112384/134530710-7da30e4b-bb78-46a7-8e0e-870dae35fbde.png)
+
+### 6) Add trigger
+Whenever the elderly presses the button, it will act as a trigger and send out the data to Google Sheets.
+```Arduino
+String lightPer_s = "hello";
+sendData("tag=adc_A0&value="+lightPer_s);
+delay(5000);
+```
+![image](https://user-images.githubusercontent.com/80112384/134531134-b6610b38-e071-4894-9620-bc42a8d166d3.png)
