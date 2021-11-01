@@ -50,8 +50,7 @@ If you would like to read more on BLYNK_WRITE, visit this website: https://docs.
 
 Copy and paste this code before the "setup" function. DO NOT ADD THIS INSIDE THE "setup" OR "loop" FUNCTIONS.
 
-![image](https://user-images.githubusercontent.com/80112384/139688520-4cd9d737-3014-4f03-9bd0-8a27dac2d2aa.png)
-
+![image](https://user-images.githubusercontent.com/80112384/139724613-7475390b-fcbc-4b5b-aaf7-34abc671ceff.png)
 ```arduino
 int pinValue = 0;
 String pillAmount = ""; 
@@ -75,6 +74,13 @@ BLYNK_WRITE(V0){
       // statements
       break;
   }
+  M5.Lcd.setTextSize(2);
+  M5.Lcd.setCursor(10, 27);
+  M5.Lcd.println(pillName);
+  M5.Lcd.setCursor(50, 55);
+  M5.Lcd.println("x " + pillAmount); 
+  digitalWrite(REDLED, LOW);
+  delay(5000);
 }
 ```
 
