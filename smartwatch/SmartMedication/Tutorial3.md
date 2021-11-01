@@ -214,6 +214,35 @@ delay(1000);
 ```
 ### add gif/image/video here
 
+## 5) Record Total Amount of Pills Taken This Week
+
+### 5.1) Set a variable for the total amount
+At the beginning, no pills are taken yet, so we set the variable <strong>total</strong> as 0.
+
+![image](https://user-images.githubusercontent.com/80112384/139707058-44866003-1646-482a-85a9-d3aa0df65c1d.png)
+```arduino
+int total = 0;
+```
+
+### 5.2) Increase total whenever user takes a pill
+After the user finishes their pills, they would press the button. The button would increase the value of the total number of pills.
+
+![image](https://user-images.githubusercontent.com/80112384/139707543-d8fefc7e-9e49-40ed-aa56-9f710ac22acb.png)
+```arduino
+total = total + 1;
+total = total + 2;
+```
+
+### 5.3) Increase level in Blynk Level H Component
+By adding the code below, the Level H component on Blynk would increase in value as well.
+
+![image](https://user-images.githubusercontent.com/80112384/139708145-55acd307-4cfd-4cf6-a5f6-034118529123.png)
+```arduino
+if (total == 9){
+  total = 0; 
+}
+Blynk.virtualWrite(V3, total);
+```
 
 [< Back: Tutorial 2 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial2.md)\
 [> Next: Tutorial 4 - Google Sheets](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial4.md)
