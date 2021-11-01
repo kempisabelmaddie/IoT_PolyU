@@ -1,4 +1,4 @@
-![image](https://user-images.githubusercontent.com/80112384/139670503-da07ddef-c214-49b8-ad24-3615b6751ca8.png)
+![image](https://user-images.githubusercontent.com/80112384/139688520-4cd9d737-3014-4f03-9bd0-8a27dac2d2aa.png)
 
 ```arduino
 int pinValue = 0;
@@ -8,19 +8,16 @@ String pillName = "";
 BLYNK_WRITE(V0){
   pinValue = param.asInt();
   M5.Lcd.fillScreen(TFT_BLACK);
-  M5.Lcd.setCursor(0, 0);
-  M5.Lcd.printf("Time: %02d : %02d : %02d\n",RTC_TimeStruct.Hours, RTC_TimeStruct.Minutes, RTC_TimeStruct.Seconds);
-  M5.Lcd.println("Medication Reminder:");
+  M5.Lcd.setCursor(0, 10, 2);
+  M5.Lcd.printf("<-- Turn Off Button");
   switch (pinValue) {
     case 1:
       pillAmount = "1"; 
       pillName = "cholesterol "; 
-      M5.Lcd.println(pillName + "x " + pillAmount); 
       break;
     case 2:
-      pillAmount = "2"; //hereeeeeeee
-      pillName = "blood pressure "; //hereeeee
-      M5.Lcd.println(pillName + "x " + pillAmount); //hereeeeeeeeeeeeeeee
+      pillAmount = "2"; 
+      pillName = "diabetes "; 
       break;
     default:
       // statements
@@ -34,7 +31,7 @@ BLYNK_WRITE(V0){
 int displayer = 0;
 ```
 
-![image](https://user-images.githubusercontent.com/80112384/139673156-9df4200e-890e-46ee-8cdb-2576d72f9c57.png)
+![image](https://user-images.githubusercontent.com/80112384/139688723-d9952f62-58b0-4e9d-9df1-b38275034100.png)
 ```arduino
 displayer = 1;
 ```
@@ -56,7 +53,7 @@ if (displayer == 0){
 pinMode(REDLED, OUTPUT);
 ```
 
-![image](https://user-images.githubusercontent.com/80112384/139674004-0e50d70f-7306-4def-8104-dfe3d9d4532b.png)
+![image](https://user-images.githubusercontent.com/80112384/139688923-534f4d80-f29e-4b1b-ab69-d13c70ebc5e2.png)
 ```arduino
 digitalWrite(REDLED, LOW);
 delay(5000);
