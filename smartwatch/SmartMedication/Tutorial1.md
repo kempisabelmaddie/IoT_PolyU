@@ -1,5 +1,6 @@
 https://www.hackster.io/herbert-stiebritz/very-simple-m5stickc-clock-08275b
 https://github.com/tanakamasayuki/M5StickC-examples/blob/master/Update/M5StickC-Update-NTP/M5StickC-Update-NTP.ino
+```arduino
 #include <M5StickC.h>
 #include <WiFi.h>
 #include "time.h"
@@ -199,3 +200,4 @@ void execOTA(String host, int port, String bin) {
     client.flush();
   }
 }
+```
