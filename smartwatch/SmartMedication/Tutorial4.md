@@ -1,3 +1,24 @@
+# Tutorial 4: Google Sheets
+The last step is to make a pill-taking record for the elderly, such as what date and time did they take the pills. This function could be useful when the elderly cannot remember clearly, whether they took their pills yet or not. Also, their doctors could use it to check their patient's (elderlies') health record. 
+
+In this tutorial, Google Sheets is used as the record, whenever the elderly presses the turn off button, the date, time, and pill name will be sent to Google Sheets.
+
+## 1) Settings in Google Sheets
+
+### 1.1) Open Google Sheets
+Go to Google Drive and open a Google Sheets.
+
+### 1.2) Rename 
+Rename the Google Sheet in the following 2 places.
+### add picture here
+
+### 1.3) Open script editor
+Go to "Tools" and press on "Script Editor".
+### add picture here
+
+### 1.4) Add code to script editor
+With reference to this tutorial (https://www.youtube.com/watch?v=KPOFncRDiHQ) and its Github page (https://github.com/stechiez/iot_projects/tree/master/GoogleSpreadSheet_ESP32), copy and paste the code below onto the script editor
+
 ```arduino
 function doGet(e){
   Logger.log("--- doGet ---");
@@ -39,8 +60,8 @@ function save_data(pillName, pillAmount){
  
     // Paste the URL of the Google Sheets starting from https thru /edit
     // For e.g.: https://docs.google.com/..../edit 
-    var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/1izsu3vYVygxHZ0dyEb_Bec0z78Wn8Ox9UgSEXD6ZveY/edit"); //here
-    var dataLoggerSheet = ss.getSheetByName("Sheet1");//here
+    var ss = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/YourScriptID/edit"); 
+    var dataLoggerSheet = ss.getSheetByName("Sheet1");
  
  
     // Get last edited row from DataLogger sheet
@@ -68,15 +89,50 @@ function save_data(pillName, pillAmount){
 
 ```
 
+### 1.5) Save project
+Press this button to save project
+### add picture here
+
+### 1.6) Deploy as web app
+Go to "Deploy", press on "New Deployments" and choose "web apps".
+
+Under "Who has access", press on "Anyone", then click "Deploy".
+
+This step would request for your authorisation. If you agree to it, then follow the procedures to complete this step. 
+
+After authorisation, your Deployment ID and Web app URL will be shown. Copy the Deployment ID and press "OK".
+
+### 1.7) Change link
+In the highlighted area, paste the deployment ID that you just copied there.
+
+![image](https://user-images.githubusercontent.com/80112384/139709729-bb84fed2-c789-4d36-b9eb-2a8ec1ef342e.png)
+
+### 1.8) Change Sheet Name
+If you named your sheet something other than "Sheet1", change the information in the highlighted area.
+![image](https://user-images.githubusercontent.com/80112384/134524310-13a4b021-6035-46fa-86bb-9811f5f7c795.png)
+
+
+## 2) Send data to Google Sheets
+Here, changes need to be made in Arduino.
+
+### 2.1) Add WiFiClient Library
+To add this new library, copy and paste the following code to Arduino.
+
 ![image](https://user-images.githubusercontent.com/80112384/139692660-353fb3f9-9876-41ab-b6dd-b86ec0a82c16.png)
 ```arduino
 #include <HTTPClient.h>
 ```
 
+### 2.2) Add deployment ID
+To identify your excel sheet, the deployment ID needs to be added.
+
 ![image](https://user-images.githubusercontent.com/80112384/139690030-cbde5927-eb8f-46ff-9f32-291f9eae2cd9.png)
 ```arduino
 String GOOGLE_SCRIPT_ID = "your deployment ID";
 ```
+
+### 2.3) Add Google Sheets Root certificate
+Root certificate is for Google to authenticate your code. Paste the following: 
 
 ![image](https://user-images.githubusercontent.com/80112384/139690228-021d1bd7-25a2-4b4a-85e7-84d945867f51.png)
 const char * root_ca=\
@@ -103,6 +159,10 @@ const char * root_ca=\
 "TBj0/VLZjmmx6BEP3ojY+x1J96relc8geMJgEtslQIxq/H5COEBkEveegeGTLg==\n" \
 "-----END CERTIFICATE-----\n";
 
+
+### 5) Send data to Google Sheets
+To send data to Google sheets, paste the "sendData" function, below the loop function:
+
 ![image](https://user-images.githubusercontent.com/80112384/139690416-5c90ad87-178d-4b7d-ae51-816cb33f1295.png)
 ```arduino
 void sendData(String params) {
@@ -117,8 +177,14 @@ void sendData(String params) {
 }
 ```
 
+### 6) Add trigger
+Whenever the elderly presses the button, it will act as a trigger and send out the data to Google Sheets.
+
 ![image](https://user-images.githubusercontent.com/80112384/139690736-839874f8-e06b-4e37-a84c-38a6cf8e10c2.png)
 ```arduino
 pillName.replace(" ", "");
 sendData("pillName="+ pillName +"&pillAmount=" + pillAmount );
 ```
+# Final Result
+The final result will look like this:
+### add video here
