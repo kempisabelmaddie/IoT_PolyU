@@ -50,7 +50,7 @@ If you would like to read more on BLYNK_WRITE, visit this website: https://docs.
 
 Copy and paste this code before the "setup" function. DO NOT ADD THIS INSIDE THE "setup" OR "loop" FUNCTIONS.
 
-![image](https://user-images.githubusercontent.com/80112384/139724613-7475390b-fcbc-4b5b-aaf7-34abc671ceff.png)
+![image](https://user-images.githubusercontent.com/80112384/139725665-1948b9a3-29c1-42af-bcb2-ae10ba98beed.png)
 ```arduino
 int pinValue = 0;
 String pillAmount = ""; 
@@ -79,7 +79,6 @@ BLYNK_WRITE(V0){
   M5.Lcd.println(pillName);
   M5.Lcd.setCursor(50, 55);
   M5.Lcd.println("x " + pillAmount); 
-  digitalWrite(REDLED, LOW);
   delay(5000);
 }
 ```
@@ -89,7 +88,7 @@ Therefore, an if-else statement needs to be added to the program, to differentia
 ### 1.2) Create a new variable <a name="variable"></a>
 A variable "displayer" is created for conditional statements. If displayer is 0, display the clock; if displayer is 1, display the reminders. Add this variable definition along with the others.
 
-![image](https://user-images.githubusercontent.com/80112384/139669971-48ace31f-4630-4011-a4d2-6125df662da3.png)
+![image](https://user-images.githubusercontent.com/80112384/139725763-5275404e-70f9-42e4-a5da-25abc5a3b1e6.png)
 ```arduino
 int displayer = 0;
 ```
@@ -97,7 +96,7 @@ int displayer = 0;
 ### 1.3) Redefine the variable when the alarm goes off <a name="redefine"></a>
 The BLYNK_WRITE segment is where the variable needs to be redefined as 1
 
-![image](https://user-images.githubusercontent.com/80112384/139725130-a9320ec8-ab6b-4928-904f-55a197928561.png)
+![image](https://user-images.githubusercontent.com/80112384/139725944-6d2d313e-f374-40c7-825c-663c073cbec8.png)
 ```arduino
 displayer = 1;
 ```
