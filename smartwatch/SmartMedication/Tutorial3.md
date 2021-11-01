@@ -84,9 +84,6 @@ BLYNK_WRITE(V0){
 }
 ```
 
-At this point, the watch's display does not come out as expected. The previous display is mixed with the new display.
-### add image here
-
 Therefore, an if-else statement needs to be added to the program, to differentiate when to display the clock, when to display the reminders.
 
 ### 1.2) Create a new variable <a name="variable"></a>
