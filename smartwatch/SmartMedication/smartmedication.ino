@@ -10,14 +10,14 @@
 
 // You should get Auth Token in the Blynk App.
 // Go to the Project Settings (nut icon).
-char auth[] = "dYe_r3bdakfCGBalxSdnPFxfboXzGu9j";
+char auth[] = "YourAuthenticationToken";
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "TP-Link_0025";
-char pass[] = "40321734";
+char ssid[] = "YourSSID";
+char pass[] = "YourPassword";
 
-String GOOGLE_SCRIPT_ID = "AKfycbwn1P7NHzuaLmJvR6NqK1r72yo0GcHdL27ZPbySuM6BLNBAo8sXziI29W1wJL4C-xuz";
+String GOOGLE_SCRIPT_ID = "YourScriptID";
 
 const char * root_ca=\
 "-----BEGIN CERTIFICATE-----\n" \
