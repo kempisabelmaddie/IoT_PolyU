@@ -155,12 +155,7 @@ Blynk.run();
 ```
 
 In order to be notified on whether your Blynk is connected to the M5Stick device, you can go to the Blynk settings, slide down to the "Notify when App is connected" and turn it on.
-### add GIF here
 
-If connected, Blynk should notify you with the message "Device is connected"
-### add picture here
-If not, this message would be showed
-### add picture here
 There are several reasons as to why you are unable to connect to the internet, check your WiFi name, password and Blynk credentials.
 
 ## 6) Display Date and Time on Blynk <a name="display"></a>
