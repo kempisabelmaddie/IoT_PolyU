@@ -97,7 +97,7 @@ int displayer = 0;
 ### 1.3) Redefine the variable when the alarm goes off <a name="redefine"></a>
 The BLYNK_WRITE segment is where the variable needs to be redefined as 1
 
-![image](https://user-images.githubusercontent.com/80112384/139688723-d9952f62-58b0-4e9d-9df1-b38275034100.png)
+![image](https://user-images.githubusercontent.com/80112384/139725130-a9320ec8-ab6b-4928-904f-55a197928561.png)
 ```arduino
 displayer = 1;
 ```
