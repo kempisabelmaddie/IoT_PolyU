@@ -144,10 +144,9 @@ https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/
 
 Write the following 2 lines to the BLYNK_WRITE function:
 
-![image](https://user-images.githubusercontent.com/80112384/139688923-534f4d80-f29e-4b1b-ab69-d13c70ebc5e2.png)
+![image](https://user-images.githubusercontent.com/80112384/139726211-76d99600-e23f-4ad3-9b9a-9b2374cd905d.png)
 ```arduino
 digitalWrite(REDLED, LOW);
-delay(5000);
 ```
 
 ### add gif/image here
