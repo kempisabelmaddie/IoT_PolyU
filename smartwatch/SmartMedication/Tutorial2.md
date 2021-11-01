@@ -4,8 +4,8 @@
 # Tutorial 2 - Blynk Setup
 The smartwatch will light up to notify pill-taking time, informing the elderly which pill to take. After the button is pressed, the light will turn off, until the next alarm goes off again.
 
-As an example, the elderly Isabel has <strong>high cholesterol</strong> and <strong>glucose level</strong>. Her pill-taking schedule is as follow:\
-<strong>Monday Wednesday @13:00 glucose pill x1</strong> \
+As an example, the elderly Isabel has <strong>high cholesterol</strong> and <strong>diabetes</strong>. Her pill-taking schedule is as follow:\
+<strong>Monday Wednesday @13:00 diabetes pill x2</strong> \
 <strong>Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1 </strong>
 
 In order for the smartwatch to light up and receive the appropriate message, we will need to use the app <strong>Blynk</strong> to make a schedule.
