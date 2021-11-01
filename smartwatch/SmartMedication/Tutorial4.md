@@ -231,6 +231,7 @@ sendData("pillName="+ pillName +"&pillAmount=" + pillAmount );
 ```
 # Final Result
 The final result will look like this:
-### add video here
+
+https://user-images.githubusercontent.com/80112384/139739692-b6acfabd-bdaf-4129-928e-b9b45380d19b.mp4
 
 [< Back: Tutorial 3 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial3.md)
