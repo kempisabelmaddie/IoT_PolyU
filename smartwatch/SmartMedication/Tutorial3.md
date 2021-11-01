@@ -5,38 +5,39 @@
 
 ### Table of contents
 1. [Change Watch Display](#display)
-
-  1.1 [Blynk_Write](#blynkwrite)
   
-  1.2 [Create a new variable](#variable)
+    1.1 [Blynk_Write](#blynkwrite)
   
-  1.3 [Redefine the variable when the alarm goes off](#redefine)
+    1.2 [Create a new variable](#variable)
   
-  1.4 [Create if-else statement](#ifelse)
+    1.3 [Redefine the variable when the alarm goes off](#redefine)
+  
+    1.4 [Create if-else statement](#ifelse)
+  
 2. [Turn Red Light on ](#red)
   
-  2.1 [Pin number for LED light](#LED)
+    2.1 [Pin number for LED light](#LED)
   
-  2.2 [Configure LED as output](#output)
+    2.2 [Configure LED as output](#output)
   
-  2.3 [Turn on light when alarm is on](#on)
+    2.3 [Turn on light when alarm is on](#on)
 3. [Turn speaker on](#speaker)
   
-  3.1 [PWM to make sounds](#PWN)
+    3.1 [PWM to make sounds](#PWM)
   
-  3.2 [Make a melody](#melody)
+    3.2 [Make a melody](#melody)
 4. [Turn off button](#off)
   
-  4.1 [Press OFF button to return to clock display](#return)
+    4.1 [Press OFF button to return to clock display](#return)
   
-  4.2 [Turn off LED light and sound](#both)
+    4.2 [Turn off LED light and sound](#both)
 5. [Record Total Amount of Pills Taken This Week](#total)
   
-  5.1 [Set a variable for the total amount](#set)
+    5.1 [Set a variable for the total amount](#set)
   
-  5.2 [Increase total whenever user takes a pill](#whenever)
+    5.2 [Increase total whenever user takes a pill](#whenever)
   
-  5.3 [Increase level in Blynk Level H Component](#level)
+    5.3 [Increase level in Blynk Level H Component](#level)
 
 ## 1) Change Watch Display <a name="display"></a>
 
@@ -111,7 +112,7 @@ if (displayer == 0){
 ### add gif/image here
 
 
-## 2) Turn Red Light on <a name="display"></a>
+## 2) Turn Red Light on <a name="red"></a>
 For better user experience, adding a red light for illumination can attract the user's attention more. 
 
 ### 2.1) Pin number for LED light <a name="LED"></a>
