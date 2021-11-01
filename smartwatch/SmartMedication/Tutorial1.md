@@ -10,6 +10,7 @@ With reference to the 2 links below, a clock can be displayed on the smartwatch:
 https://www.hackster.io/herbert-stiebritz/very-simple-m5stickc-clock-08275b \
 https://github.com/tanakamasayuki/M5StickC-examples/blob/master/Update/M5StickC-Update-NTP/M5StickC-Update-NTP.ino
 
+# add picture here
 
 Copy and paste the code below to your Arduino program.
 
