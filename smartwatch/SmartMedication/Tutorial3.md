@@ -3,7 +3,44 @@
 
 # Tutorial 3 - Alarm Setup
 
-## 1) Change Watch Display
+### Table of contents
+1. [Change Watch Display](#display)
+
+  1.1 [Blynk_Write](#blynkwrite)
+  
+  1.2 [Create a new variable](#variable)
+  
+  1.3 [Redefine the variable when the alarm goes off](#redefine)
+  
+  1.4 [Create if-else statement](#ifelse)
+2. [Turn Red Light on ](#red)
+  
+  2.1 [Pin number for LED light](#LED)
+  
+  2.2 [Configure LED as output](#output)
+  
+  2.3 [Turn on light when alarm is on](#on)
+3. [Turn speaker on](#speaker)
+  
+  3.1 [PWM to make sounds](#PWN)
+  
+  3.2 [Make a melody](#melody)
+4. [Turn off button](#off)
+  
+  4.1 [Press OFF button to return to clock display](#return)
+  
+  4.2 [Turn off LED light and sound](#both)
+5. [Record Total Amount of Pills Taken This Week](#total)
+  
+  5.1 [Set a variable for the total amount](#set)
+  
+  5.2 [Increase total whenever user takes a pill](#whenever)
+  
+  5.3 [Increase level in Blynk Level H Component](#level)
+
+## 1) Change Watch Display <a name="display"></a>
+
+### 1.1) Blynk_Write <a name="blynkwrite"></a>
 Here is the important part. When it is time to take the medicine, the watch's(M5Stick) display should change from clock mode, to pill reminders mode.
 
 In tutorial 2's "Set Virtual Pin Value" section, pin V0 is used to turn the pill alarm on or off. Taking tutorial 2 as an example, when the time is 1pm (on Monday or Wednesday), pin v0 would be set to "1", which means it is time to take the glucose pill. Similarly, if the time is 9am (on Tuesday or Thursday), pin v0 would be set to "2", which means it is time to take the cholesterol pill.
@@ -45,7 +82,7 @@ At this point, the watch's display does not come out as expected. The previous d
 
 Therefore, an if-else statement needs to be added to the program, to differentiate when to display the clock, when to display the reminders.
 
-### 1.1) Create a new variable
+### 1.2) Create a new variable <a name="variable"></a>
 A variable "displayer" is created for conditional statements. If displayer is 0, display the clock; if displayer is 1, display the reminders. Add this variable definition along with the others.
 
 ![image](https://user-images.githubusercontent.com/80112384/139669971-48ace31f-4630-4011-a4d2-6125df662da3.png)
@@ -53,7 +90,7 @@ A variable "displayer" is created for conditional statements. If displayer is 0,
 int displayer = 0;
 ```
 
-### 1.2) Redefine the variable when the alarm goes off
+### 1.3) Redefine the variable when the alarm goes off <a name="redefine"></a>
 The BLYNK_WRITE segment is where the variable needs to be redefined as 1
 
 ![image](https://user-images.githubusercontent.com/80112384/139688723-d9952f62-58b0-4e9d-9df1-b38275034100.png)
@@ -61,7 +98,7 @@ The BLYNK_WRITE segment is where the variable needs to be redefined as 1
 displayer = 1;
 ```
 
-### 1.3) Create if-else statement
+### 1.4) Create if-else statement <a name="ifelse"></a>
 The if-else statement is added to "loop" function. 
 
 ![image](https://user-images.githubusercontent.com/80112384/139673570-d31dcd38-d312-4621-90a8-34393e361a5e.png)
@@ -74,10 +111,10 @@ if (displayer == 0){
 ### add gif/image here
 
 
-## 2) Turn Red Light on 
+## 2) Turn Red Light on <a name="display"></a>
 For better user experience, adding a red light for illumination can attract the user's attention more. 
 
-### 2.1) Pin number for LED light
+### 2.1) Pin number for LED light <a name="LED"></a>
 The pin number for the red LED light is 10 for M5StickC, this can be found at the back of the device. As you can see from the picture, the yellow box that is used to highlight the part, is where you can find the pin number for the red LED light.
 ![3_a46785e5-1f9e-460b-9796-cc9265ec3fea_1200x1200](https://user-images.githubusercontent.com/80112384/128193001-ff439fb0-4160-4d81-92ba-3cd5590ee9ab.jpg)
 
@@ -88,7 +125,7 @@ Therefore, a variable "REDLED" is defined to 10 for programming convenience.
 #define REDLED 10
 ```
 
-### 2.2) Configure LED as output
+### 2.2) Configure LED as output <a name="output"></a>
 In arduino, whether the pin is used as input or output, it must be stated in the program, hence "pinMode" is used. In this project, the LED light is an output. As this is considered a setting, we shall put it in the "setup" function. To read more on "pinMode", this website can be visited:
 https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/
 
@@ -97,7 +134,7 @@ https://www.arduino.cc/reference/en/language/functions/digital-io/pinmode/
 pinMode(REDLED, OUTPUT);
 ```
 
-### 2.3) Turn on light when alarm is on
+### 2.3) Turn on light when alarm is on <a name="on"></a>
 
 According to the official Arduino website, we use "digitalWrite" to turn the LED light on and off. LOW means on, HIGH means off. The source can be found here:
 https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/
@@ -112,7 +149,7 @@ delay(5000);
 
 ### add gif/image here
 
-## 3) Turn speaker on
+## 3) Turn speaker on <a name="speaker"></a>
 Having the red LED light may not be enough to attract the attention of the user/elderly. With sound, the user can hear the alarm even from a distance. Hence, the speaker unit is attached to the watch, and a melody is played whenever it is time for medicine. The following part is adapted from these 2 links:
 
 1) M5StickC Github repository: arduino code for speaker
@@ -122,7 +159,7 @@ https://github.com/m5stack/M5StickC/blob/master/examples/Hat/SPEAKER/SPEAKER.ino
 https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/UIFlow-StickC-Book-English.pdf
 
 
-### 3.1) PWM to make sounds
+### 3.1) PWM to make sounds <a name="PWM"></a>
 PWM stands for Pulse Width Modulation, it is primarily used to control the intensity of an LED light bulb. However, it can also be applied to make varying sounds with a speaker. From the 1st link above, we use the PWM LED functions to program the speaker. Following the link, these lines of code are inserted for variable declarations:
 
 ![image](https://user-images.githubusercontent.com/80112384/139674181-1c92c424-ffa4-4801-8ef4-f67f6df6d216.png)
@@ -143,7 +180,7 @@ ledcAttachPin(servo_pin, ledChannel);
 ledcWrite(ledChannel, 256);//0°
 ````
 
-### 3.2) Make a melody
+### 3.2) Make a melody <a name="melody"></a>
 Next, a pleasant melody should be created for the alarm ringtone. As the sound is created by frequency, each musical notes has its own frequency in Hertz(Hz). To find out the frequency for certain notes, it is fortunate that M5Stack published a documentation with it. It does not include all notes, but it has some basic ones. This can be found in the 2nd link above.
 ![image](https://user-images.githubusercontent.com/80112384/128365737-65990457-d75b-467b-8e0b-ff8c2d5e6c65.png)
 
@@ -171,10 +208,10 @@ else{
 }
 ```
 
-## 4) Turn off button
+## 4) Turn off button <a name="off"></a>
 After the user is reminded to take the medicine, the user should be able to turn off the sound and LED light, returning back to the clock display. In doing so, the program should include an OFF button for this function. 
 
-### 4.1) Press OFF button to return to clock display
+### 4.1) Press OFF button to return to clock display <a name="return"></a>
 There are 3 buttons on M5StickC: Button A, Button B, and Power ON/OFF button. In this tutorial, we use Button A as our OFF button to return to the clock display. To find the location of each button, refer to the picture below:
 
 ![68747470733a2f2f6d35737461636b2e6f73732d636e2d7368656e7a68656e2e616c6979756e63732e636f6d2f696d6167652f6d352d646f63735f636f6e74656e742f636f72652f6d35737469636b635f30312e706e67](https://user-images.githubusercontent.com/80112384/128457495-d2654f59-7646-44c7-a90f-d65b671ae137.png)
@@ -203,7 +240,7 @@ else{
 ### add gif/image here
 
 
-### 4.2) Turn off LED light and sound
+### 4.2) Turn off LED light and sound <a name="both"></a>
 Here, the LED light and sound will be turned off when it returns from reminder to clock display. To turn off the light, LED light settings is set to "HIGH" with "digitalWrite". To turn off the sound, the frequency is set to 0 with "ledcWriteTone". This is added to the block of code for the clock display settings.
 
 ![image](https://user-images.githubusercontent.com/80112384/139675247-2958d825-325f-4768-a201-8321b695076f.png)
@@ -214,9 +251,9 @@ delay(1000);
 ```
 ### add gif/image/video here
 
-## 5) Record Total Amount of Pills Taken This Week
+## 5) Record Total Amount of Pills Taken This Week <a name="total"></a>
 
-### 5.1) Set a variable for the total amount
+### 5.1) Set a variable for the total amount <a name="set"></a>
 At the beginning, no pills are taken yet, so we set the variable <strong>total</strong> as 0.
 
 ![image](https://user-images.githubusercontent.com/80112384/139707058-44866003-1646-482a-85a9-d3aa0df65c1d.png)
@@ -224,7 +261,7 @@ At the beginning, no pills are taken yet, so we set the variable <strong>total</
 int total = 0;
 ```
 
-### 5.2) Increase total whenever user takes a pill
+### 5.2) Increase total whenever user takes a pill <a name="whenever"></a>
 After the user finishes their pills, they would press the button. The button would increase the value of the total number of pills.
 
 ![image](https://user-images.githubusercontent.com/80112384/139707543-d8fefc7e-9e49-40ed-aa56-9f710ac22acb.png)
@@ -233,7 +270,7 @@ total = total + 1;
 total = total + 2;
 ```
 
-### 5.3) Increase level in Blynk Level H Component
+### 5.3) Increase level in Blynk Level H Component <a name="level"></a>
 By adding the code below, the Level H component on Blynk would increase in value as well.
 
 ![image](https://user-images.githubusercontent.com/80112384/139708145-55acd307-4cfd-4cf6-a5f6-034118529123.png)
