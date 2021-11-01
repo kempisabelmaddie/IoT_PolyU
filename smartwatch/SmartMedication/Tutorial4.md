@@ -68,6 +68,11 @@ function save_data(pillName, pillAmount){
 
 ```
 
+![image](https://user-images.githubusercontent.com/80112384/139692660-353fb3f9-9876-41ab-b6dd-b86ec0a82c16.png)
+```arduino
+#include <HTTPClient.h>
+```
+
 ![image](https://user-images.githubusercontent.com/80112384/139690030-cbde5927-eb8f-46ff-9f32-291f9eae2cd9.png)
 ```arduino
 String GOOGLE_SCRIPT_ID = "your deployment ID";
