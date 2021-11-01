@@ -275,13 +275,14 @@ total = total + 2;
 ### 5.3) Increase level in Blynk Level H Component <a name="level"></a>
 By adding the code below, the Level H component on Blynk would increase in value as well.
 
-![image](https://user-images.githubusercontent.com/80112384/139708145-55acd307-4cfd-4cf6-a5f6-034118529123.png)
+![image](https://user-images.githubusercontent.com/80112384/139728826-0134e7d9-f655-4adc-958d-0b24f4efe30c.png)
 ```arduino
 if (total == 9){
   total = 0; 
 }
 Blynk.virtualWrite(V3, total);
 ```
+### add gif/image/video here
 
 [< Back: Tutorial 2 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial2.md)\
 [> Next: Tutorial 4 - Google Sheets](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial4.md)
