@@ -77,8 +77,8 @@ Right now, we are setting the time for <strong>glucose pill</strong>, so we set 
 
 ### 3.4) Repeat this process for the rest of the schedule
 The time and date for taking glucose pill is set! Now repeat steps 1 to 3 for the cholesterol pills. \
-~~Monday Wednesday @13:00 glucose pill x1~~ \
-<strong>Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1</strong> 
+~~Monday Wednesday @13:00 diabetes pill x2~~ \
+<strong>Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1 </strong>
 
 ## 5) Connect Arduino to Blynk
 Include the Blynk library in Arduino by going to <strong>Sketch > Include Library > Manage Libraries</strong>. 
