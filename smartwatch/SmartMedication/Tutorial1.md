@@ -1,9 +1,14 @@
 [< Back: Tutorial 0 - Arduino Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial0.md)\
 [> Next: Tutorial 2 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial2.md)
+
 # Tutorial 1 - Clock Display
+
+# Table of contents
+1. [NTP Clock](#NTP)
+
 A smartwatch must have a time/clock display. The clock display can be easily done by using the given code from M5Stick C Arduino examples.
 
-## 1) NTP Clock
+## 1) NTP Clock <a name="NTP"></a>
 NTP stands for Network Time Protocol, it is a protocol that allows the synchronization of system clocks (from desktops to servers).
 
 With reference to the 2 links below, a clock can be displayed on the smartwatch:\
