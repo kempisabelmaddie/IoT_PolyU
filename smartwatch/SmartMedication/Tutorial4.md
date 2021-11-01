@@ -43,11 +43,17 @@ Go to Google Drive and open a Google Sheets.
 
 ### 1.2) Rename <a name="rename"></a>
 Rename the Google Sheet in the following 2 places.
-### add picture here
+
+1)
+
+![image](https://user-images.githubusercontent.com/80112384/139730592-d3134cda-9de4-41bc-b9f7-64a23ae5e6f5.png)
+
+2)
+
+![image](https://user-images.githubusercontent.com/80112384/139730624-5b75a9fc-8690-4738-a5af-276d395a2a4d.png)
 
 ### 1.3) Open script editor <a name="script"></a>
 Go to "Tools" and press on "Script Editor".
-### add picture here
 
 ### 1.4) Add code to script editor <a name="add"></a>
 With reference to this tutorial (https://www.youtube.com/watch?v=KPOFncRDiHQ) and its Github page (https://github.com/stechiez/iot_projects/tree/master/GoogleSpreadSheet_ESP32), copy and paste the code below onto the script editor
@@ -123,8 +129,7 @@ function save_data(pillName, pillAmount){
 ```
 
 ### 1.5) Save project <a name="save"></a>
-Press this button to save project
-### add picture here
+Press the Save Project button.
 
 ### 1.6) Deploy as web app <a name="deploy"></a>
 Go to "Deploy", press on "New Deployments" and choose "web apps".
@@ -136,9 +141,13 @@ This step would request for your authorisation. If you agree to it, then follow 
 After authorisation, your Deployment ID and Web app URL will be shown. Copy the Deployment ID and press "OK".
 
 ### 1.7) Change link <a name="change"></a>
-In the highlighted area, paste the deployment ID that you just copied there.
+From the link of your google sheet, copy the highlighted area, which is your script ID.
 
-![image](https://user-images.githubusercontent.com/80112384/139709729-bb84fed2-c789-4d36-b9eb-2a8ec1ef342e.png)
+![image](https://user-images.githubusercontent.com/80112384/139731475-98cca0b5-b1b5-4746-8388-190a244f931c.png)
+
+Paste your script ID in the hightlighted area of the script editor.
+
+![image](https://user-images.githubusercontent.com/80112384/139731569-845c023c-2574-4bd5-a80f-98f61aa265a1.png)
 
 ### 1.8) Change Sheet Name <a name="name"></a>
 If you named your sheet something other than "Sheet1", change the information in the highlighted area.
@@ -168,6 +177,7 @@ String GOOGLE_SCRIPT_ID = "your deployment ID";
 Root certificate is for Google to authenticate your code. Paste the following: 
 
 ![image](https://user-images.githubusercontent.com/80112384/139690228-021d1bd7-25a2-4b4a-85e7-84d945867f51.png)
+```arduino
 const char * root_ca=\
 "-----BEGIN CERTIFICATE-----\n" \
 "MIIDujCCAqKgAwIBAgILBAAAAAABD4Ym5g0wDQYJKoZIhvcNAQEFBQAwTDEgMB4G\n" \
@@ -191,6 +201,7 @@ const char * root_ca=\
 "AfvDbbnvRG15RjF+Cv6pgsH/76tuIMRQyV+dTZsXjAzlAcmgQWpzU/qlULRuJQ/7\n" \
 "TBj0/VLZjmmx6BEP3ojY+x1J96relc8geMJgEtslQIxq/H5COEBkEveegeGTLg==\n" \
 "-----END CERTIFICATE-----\n";
+```
 
 
 ### 2.4) Send data to Google Sheets <a name="data"></a>
@@ -213,7 +224,7 @@ void sendData(String params) {
 ### 2.5) Add trigger <a name="trigger"></a>
 Whenever the elderly presses the button, it will act as a trigger and send out the data to Google Sheets.
 
-![image](https://user-images.githubusercontent.com/80112384/139690736-839874f8-e06b-4e37-a84c-38a6cf8e10c2.png)
+![image](https://user-images.githubusercontent.com/80112384/139731913-62467ed5-9241-4c84-8095-b9ff66a87917.png)
 ```arduino
 pillName.replace(" ", "");
 sendData("pillName="+ pillName +"&pillAmount=" + pillAmount );
