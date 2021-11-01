@@ -72,7 +72,7 @@ This part will be explained in part <em> 3) Timetable input </em>
 
 ## 4) Timetable input <a name="timetable"></a>
 Reviewing the elderlies' schedule:\
-<strong>Monday Wednesday @13:00 glucose pill x1</strong> \
+<strong>Monday Wednesday @13:00 diabetes pill x2</strong> \
 <strong>Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1 </strong> 
 
 Let us first input the time and weekdays for taking the glucose pill. 
