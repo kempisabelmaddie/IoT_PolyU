@@ -65,10 +65,10 @@ This part will be explained in part <em> 3) Timetable input </em>
 ![Screenshot_2021-06-30-19-40-41-770_cc blynk](https://user-images.githubusercontent.com/80112384/123954839-704b9980-d9db-11eb-933e-2d107f1a66ef.jpg)
 
 ### 3.4) Level H <a name="level"></a>
+![Screenshot_2021-11-02-03-29-31-702_cc blynk](https://user-images.githubusercontent.com/80112384/139735308-2c589497-3624-4bd4-93a2-a5c36f646c94.jpg)
 
-### CHANGE LAYOUT
 ### Final canvas layout
-![Screenshot_2021-06-21-11-16-27-535_cc blynk (1)](https://user-images.githubusercontent.com/80112384/123961097-96286c80-d9e2-11eb-8d45-8eda301e1ca6.jpg)
+![Screenshot_2021-11-02-02-13-46-553_cc blynk](https://user-images.githubusercontent.com/80112384/139735314-bb46decf-805c-4651-8879-f810f00bb355.jpg)
 
 ## 4) Timetable input <a name="timetable"></a>
 Reviewing the elderlies' schedule:\
@@ -176,7 +176,7 @@ Blynk.virtualWrite(V2, currentDate);
 ```
 
 Now, the time and date should be displayed on Blynk.
-### add image here.
+![IMG_7573](https://user-images.githubusercontent.com/80112384/139735699-6d73ef71-4067-43a9-a59e-c77b43684c58.jpg)
 
 [< Back: Tutorial 1 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial1.md)\
 [> Next: Tutorial 3 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial3.md)
