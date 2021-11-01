@@ -1,5 +1,18 @@
-https://www.hackster.io/herbert-stiebritz/very-simple-m5stickc-clock-08275b
+[< Back: Tutorial 0 - Arduino Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial0.md)\
+[> Next: Tutorial 2 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial2.md)
+# Tutorial 1 - Clock Display
+A smartwatch must have a time/clock display. The clock display can be easily done by using the given code from M5Stick C Arduino examples.
+
+## 1) NTP Clock
+NTP stands for Network Time Protocol, it is a protocol that allows the synchronization of system clocks (from desktops to servers).
+
+With reference to the 2 links below, a clock can be displayed on the smartwatch:\
+https://www.hackster.io/herbert-stiebritz/very-simple-m5stickc-clock-08275b \
 https://github.com/tanakamasayuki/M5StickC-examples/blob/master/Update/M5StickC-Update-NTP/M5StickC-Update-NTP.ino
+
+
+Copy and paste the code below to your Arduino program.
+
 ```arduino
 #include <M5StickC.h>
 #include <WiFi.h>
@@ -201,3 +214,5 @@ void execOTA(String host, int port, String bin) {
   }
 }
 ```
+[< Back: Tutorial 0 - Arduino Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial0.md)\
+[> Next: Tutorial 2 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial2.md)
