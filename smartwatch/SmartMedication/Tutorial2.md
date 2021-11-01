@@ -2,6 +2,34 @@
 [> Next: Tutorial 3 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial3.md)
 
 # Tutorial 2 - Blynk Setup
+
+### Table of contents
+1. [Background](#background)
+2. [Blynk install and setup](#install)
+3. [Blynk Widget Settings](#widget)
+
+   3.1 [Eventor](#eventor)
+  
+   3.2 [Labeled Value](#labeled)
+   
+   3.3 [Value Display](#value)
+   
+   3.4 [Level H](#level)
+
+4. [Timetable Input](#timetable)
+   
+   4.1 [Add New Event](#event)
+   
+   4.2 [Set the date and time](#time)
+   
+   4.3 [Set Virtual Pin Value (...then set pin value to...)](#pin)
+   
+   4.4 [Repeat this process for the rest of the schedule](#repeat)
+
+5. [Connect Arduino to Blynk](#blynk)
+6. [Display Date and Time on Blynk](#display)
+
+## 1) Background <a name="background"></a>
 The smartwatch will light up to notify pill-taking time, informing the elderly which pill to take. After the button is pressed, the light will turn off, until the next alarm goes off again.
 
 As an example, the elderly Isabel has <strong>high cholesterol</strong> and <strong>diabetes</strong>. Her pill-taking schedule is as follow:\
@@ -10,13 +38,13 @@ As an example, the elderly Isabel has <strong>high cholesterol</strong> and <str
 
 In order for the smartwatch to light up and receive the appropriate message, we will need to use the app <strong>Blynk</strong> to make a schedule.
 
-## 1) Blynk install and setup
+## 2) Blynk install and setup <a name="install"></a>
 Note: This tutorial only works for Android smartphone users.\
 The Blynk app is for inputting the pill-taking schedule. Follow these sections in the tutorial with this link: 
 https://docs.blynk.cc/#downloads \
 ![image](https://user-images.githubusercontent.com/80112384/123949337-07f9b980-d9d5-11eb-9189-8f826eae011f.png)
 
-## 2) Blynk Widget Settings
+## 3) Blynk Widget Settings <a name="widget"></a>
 After receiving your authentication token, we add the widgets to the empty canvas. Tap anywhere on the canvas to open the widget box. All the available widgets are located there. Choose these widgets:
 1) Eventor x 1
 2) Labeled Value x 2
@@ -25,43 +53,43 @@ After receiving your authentication token, we add the widgets to the empty canva
 
 To open each widget settings, click on the widget to prompt the settings page.
 Follow the settings below:
-### 2.1) Eventor 
+### 3.1) Eventor <a name="eventor"></a>
 This part will be explained in part <em> 3) Timetable input </em>
 
-### 2.2) Labeled Value
+### 3.2) Labeled Value <a name="labeled"></a>
 ![Screenshot_2021-06-30-19-26-32-272_cc blynk](https://user-images.githubusercontent.com/80112384/123954101-90c72400-d9da-11eb-98ef-aa2239fb6a15.jpg)
 ![Screenshot_2021-06-30-19-28-06-486_cc blynk](https://user-images.githubusercontent.com/80112384/123954952-9b35ed80-d9db-11eb-892c-95238feccb6d.jpg)
 
-### 2.3) Value Display
+### 3.3) Value Display <a name="value"></a>
 ![Screenshot_2021-06-30-19-27-50-606_cc blynk](https://user-images.githubusercontent.com/80112384/123954317-d7b51980-d9da-11eb-9cba-c000266345fd.jpg)
 ![Screenshot_2021-06-30-19-40-41-770_cc blynk](https://user-images.githubusercontent.com/80112384/123954839-704b9980-d9db-11eb-933e-2d107f1a66ef.jpg)
 
-### 2.4) Level H
+### 3.4) Level H <a name="level"></a>
 
 ### CHANGE LAYOUT
 ### Final canvas layout
 ![Screenshot_2021-06-21-11-16-27-535_cc blynk (1)](https://user-images.githubusercontent.com/80112384/123961097-96286c80-d9e2-11eb-8d45-8eda301e1ca6.jpg)
 
-## 3) Timetable input
+## 4) Timetable input <a name="timetable"></a>
 Reviewing the elderlies' schedule:\
 <strong>Monday Wednesday @13:00 glucose pill x1</strong> \
 <strong>Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1 </strong> 
 
 Let us first input the time and weekdays for taking the glucose pill. 
 
-### 3.1) Add New Event
+### 4.1) Add New Event <a name="event"></a>
 One event is set to <strong>one</strong> certain <strong>time</strong>, but can occur at <strong>multiple days</strong>. 
 
 Click on the Eventor widget and press "Add New Event" to add \
 ![giphy](https://user-images.githubusercontent.com/80112384/124075706-df76cb80-da77-11eb-8a71-85fe32a898a0.gif)
 
-### 3.2) Set the date and time (When time turns to...)
+### 4.2) Set the date and time (When time turns to...) <a name="time"></a>
 Click on "Time", all weekdays and a time widget will show. By default, all dates are selected. As the eldery only takes the glucose pills on Mondays and Wednesday, we deselect all the other weekdays. \
 ![date](https://user-images.githubusercontent.com/80112384/124079953-59a94f00-da7c-11eb-8bab-a463c8ad253b.gif) \
 Then, click on the time widget and choose 1pm (13:00) for taking the glucose pill. \
 ![time](https://user-images.githubusercontent.com/80112384/124080737-4945a400-da7d-11eb-99d9-47ef9ee3c9ee.gif)
 
-### 3.3) Set Virtual Pin Value (...then set pin value to...)
+### 4.3) Set Virtual Pin Value (...then set pin value to...) <a name="pin"></a>
 When the time turns to 13:00, it needs to send a message to the smartwatch, indicating it is time to take the glucose pill. \
 In Blynk, we use the mechanism of setting a <strong>virtual</strong> pin value to simulate the action of sending a message.\
 Hence, we need to set the virtual pin <strong>V0</strong> value. \
@@ -75,12 +103,12 @@ Each pin value(number) indicates different pills:
 Right now, we are setting the time for <strong>glucose pill</strong>, so we set the message to <strong>"1"</strong>. \
 ![to1](https://user-images.githubusercontent.com/80112384/124083090-0cc77780-da80-11eb-87cd-54ec3b561436.gif)
 
-### 3.4) Repeat this process for the rest of the schedule
+### 4.4) Repeat this process for the rest of the schedule <a name="repeat"></a>
 The time and date for taking glucose pill is set! Now repeat steps 1 to 3 for the cholesterol pills. \
 ~~Monday Wednesday @13:00 diabetes pill x2~~ \
 <strong>Tuesday Thursday @09:00 cholestorol pill x1, @20:00 cholesterol pill x1 </strong>
 
-## 5) Connect Arduino to Blynk
+## 5) Connect Arduino to Blynk <a name="blynk"></a>
 Include the Blynk library in Arduino by going to <strong>Sketch > Include Library > Manage Libraries</strong>. 
 
 Type "Blynk" and press "Install". 
@@ -135,7 +163,7 @@ If not, this message would be showed
 ### add picture here
 There are several reasons as to why you are unable to connect to the internet, check your WiFi name, password and Blynk credentials.
 
-## 6) Display Date and Time on Blynk
+## 6) Display Date and Time on Blynk <a name="display"></a>
 Next, we would want to display the date and time on the Blynk app. 
 Instead of using the real-time clock widget provided in Blynk, I prefer to display it with the value display widgets. 
 Moreover, the date and time is not automatically provided, we must program it in Arduino for it to show.
