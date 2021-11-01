@@ -1,24 +1,55 @@
 [< Back: Tutorial 3 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial3.md)
 
 # Tutorial 4: Google Sheets
+
+# Table of contents
+1. [Settings in Google Sheets](#settings)
+
+    1.1 [Open Google Sheets](#open)
+    
+    1.2 [Rename](#rename)
+    
+    1.3 [Open script editor](#script)
+    
+    1.4 [Add code to script editor](#add)
+    
+    1.5 [Save project](#save)
+    
+    1.6 [Deploy as web app](#deploy)
+    
+    1.7 [Change link](#change)
+    
+    1.8 [Change Sheet Name](#name)
+ 2. [Send data to Google Sheets](#send)
+ 
+    2.1 [Add WiFiClient Library](#wifi)
+    
+    2.2 [Add deployment ID](#id)
+    
+    2.3 [Add Google Sheets Root certificate](#cert)
+    
+    2.4 [Send data to Google Sheets](#data)
+    
+    2.5 [Add trigger](#trigger)
+
 The last step is to make a pill-taking record for the elderly, such as what date and time did they take the pills. This function could be useful when the elderly cannot remember clearly, whether they took their pills yet or not. Also, their doctors could use it to check their patient's (elderlies') health record. 
 
 In this tutorial, Google Sheets is used as the record, whenever the elderly presses the turn off button, the date, time, and pill name will be sent to Google Sheets.
 
-## 1) Settings in Google Sheets
+## 1) Settings in Google Sheets <a name="settings"></a>
 
-### 1.1) Open Google Sheets
+### 1.1) Open Google Sheets <a name="open"></a>
 Go to Google Drive and open a Google Sheets.
 
-### 1.2) Rename 
+### 1.2) Rename <a name="rename"></a>
 Rename the Google Sheet in the following 2 places.
 ### add picture here
 
-### 1.3) Open script editor
+### 1.3) Open script editor <a name="script"></a>
 Go to "Tools" and press on "Script Editor".
 ### add picture here
 
-### 1.4) Add code to script editor
+### 1.4) Add code to script editor <a name="add"></a>
 With reference to this tutorial (https://www.youtube.com/watch?v=KPOFncRDiHQ) and its Github page (https://github.com/stechiez/iot_projects/tree/master/GoogleSpreadSheet_ESP32), copy and paste the code below onto the script editor
 
 ```arduino
@@ -91,11 +122,11 @@ function save_data(pillName, pillAmount){
 
 ```
 
-### 1.5) Save project
+### 1.5) Save project <a name="save"></a>
 Press this button to save project
 ### add picture here
 
-### 1.6) Deploy as web app
+### 1.6) Deploy as web app <a name="deploy"></a>
 Go to "Deploy", press on "New Deployments" and choose "web apps".
 
 Under "Who has access", press on "Anyone", then click "Deploy".
@@ -104,20 +135,20 @@ This step would request for your authorisation. If you agree to it, then follow 
 
 After authorisation, your Deployment ID and Web app URL will be shown. Copy the Deployment ID and press "OK".
 
-### 1.7) Change link
+### 1.7) Change link <a name="change"></a>
 In the highlighted area, paste the deployment ID that you just copied there.
 
 ![image](https://user-images.githubusercontent.com/80112384/139709729-bb84fed2-c789-4d36-b9eb-2a8ec1ef342e.png)
 
-### 1.8) Change Sheet Name
+### 1.8) Change Sheet Name <a name="name"></a>
 If you named your sheet something other than "Sheet1", change the information in the highlighted area.
 ![image](https://user-images.githubusercontent.com/80112384/134524310-13a4b021-6035-46fa-86bb-9811f5f7c795.png)
 
 
-## 2) Send data to Google Sheets
+## 2) Send data to Google Sheets <a name="send"></a>
 Here, changes need to be made in Arduino.
 
-### 2.1) Add WiFiClient Library
+### 2.1) Add WiFiClient Library <a name="wifi"></a>
 To add this new library, copy and paste the following code to Arduino.
 
 ![image](https://user-images.githubusercontent.com/80112384/139692660-353fb3f9-9876-41ab-b6dd-b86ec0a82c16.png)
@@ -125,7 +156,7 @@ To add this new library, copy and paste the following code to Arduino.
 #include <HTTPClient.h>
 ```
 
-### 2.2) Add deployment ID
+### 2.2) Add deployment ID <a name="id"></a>
 To identify your excel sheet, the deployment ID needs to be added.
 
 ![image](https://user-images.githubusercontent.com/80112384/139690030-cbde5927-eb8f-46ff-9f32-291f9eae2cd9.png)
@@ -133,7 +164,7 @@ To identify your excel sheet, the deployment ID needs to be added.
 String GOOGLE_SCRIPT_ID = "your deployment ID";
 ```
 
-### 2.3) Add Google Sheets Root certificate
+### 2.3) Add Google Sheets Root certificate <a name="cert"></a>
 Root certificate is for Google to authenticate your code. Paste the following: 
 
 ![image](https://user-images.githubusercontent.com/80112384/139690228-021d1bd7-25a2-4b4a-85e7-84d945867f51.png)
@@ -162,7 +193,7 @@ const char * root_ca=\
 "-----END CERTIFICATE-----\n";
 
 
-### 2.5) Send data to Google Sheets
+### 2.4) Send data to Google Sheets <a name="data"></a>
 To send data to Google sheets, paste the "sendData" function, below the loop function:
 
 ![image](https://user-images.githubusercontent.com/80112384/139690416-5c90ad87-178d-4b7d-ae51-816cb33f1295.png)
@@ -179,7 +210,7 @@ void sendData(String params) {
 }
 ```
 
-### 2.6) Add trigger
+### 2.5) Add trigger <a name="trigger"></a>
 Whenever the elderly presses the button, it will act as a trigger and send out the data to Google Sheets.
 
 ![image](https://user-images.githubusercontent.com/80112384/139690736-839874f8-e06b-4e37-a84c-38a6cf8e10c2.png)
