@@ -1,3 +1,5 @@
+[< Back: Tutorial 3 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial3.md)
+
 # Tutorial 4: Google Sheets
 The last step is to make a pill-taking record for the elderly, such as what date and time did they take the pills. This function could be useful when the elderly cannot remember clearly, whether they took their pills yet or not. Also, their doctors could use it to check their patient's (elderlies') health record. 
 
@@ -188,3 +190,5 @@ sendData("pillName="+ pillName +"&pillAmount=" + pillAmount );
 # Final Result
 The final result will look like this:
 ### add video here
+
+[< Back: Tutorial 3 - Alarm Setup](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial3.md)
