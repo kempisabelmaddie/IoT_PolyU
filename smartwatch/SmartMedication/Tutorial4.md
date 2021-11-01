@@ -160,7 +160,7 @@ const char * root_ca=\
 "-----END CERTIFICATE-----\n";
 
 
-### 5) Send data to Google Sheets
+### 2.5) Send data to Google Sheets
 To send data to Google sheets, paste the "sendData" function, below the loop function:
 
 ![image](https://user-images.githubusercontent.com/80112384/139690416-5c90ad87-178d-4b7d-ae51-816cb33f1295.png)
@@ -177,7 +177,7 @@ void sendData(String params) {
 }
 ```
 
-### 6) Add trigger
+### 2.6) Add trigger
 Whenever the elderly presses the button, it will act as a trigger and send out the data to Google Sheets.
 
 ![image](https://user-images.githubusercontent.com/80112384/139690736-839874f8-e06b-4e37-a84c-38a6cf8e10c2.png)
