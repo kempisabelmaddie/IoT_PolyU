@@ -111,7 +111,7 @@ if (displayer == 0){
 }
 ```
 
-### add gif/image here
+![IMG_7576](https://user-images.githubusercontent.com/80112384/139736278-6ea845d8-6a3c-4e9e-ab5a-70933fb443cb.gif)
 
 
 ## 2) Turn Red Light on <a name="red"></a>
@@ -149,7 +149,8 @@ Write the following 2 lines to the BLYNK_WRITE function:
 digitalWrite(REDLED, LOW);
 ```
 
-### add gif/image here
+![IMG_7579](https://user-images.githubusercontent.com/80112384/139737289-e15c5d17-fed3-4030-8803-7667dbdf062d.jpg)
+
 
 ## 3) Turn speaker on <a name="speaker"></a>
 Having the red LED light may not be enough to attract the attention of the user/elderly. With sound, the user can hear the alarm even from a distance. Hence, the speaker unit is attached to the watch, and a melody is played whenever it is time for medicine. The following part is adapted from these 2 links:
@@ -239,7 +240,7 @@ else{
 }
 ```
 
-### add gif/image here
+https://user-images.githubusercontent.com/80112384/139738183-dbd3da7c-a976-4b13-8f91-e9a3a9421f25.mp4
 
 
 ### 4.2) Turn off LED light and sound <a name="both"></a>
@@ -251,7 +252,9 @@ digitalWrite(REDLED, HIGH);
 ledcWriteTone(ledChannel, 0);
 delay(1000);
 ```
-### add gif/image/video here
+
+https://user-images.githubusercontent.com/80112384/139738542-ebbde8dc-d36b-42e2-81af-6474aa02d68d.mp4
+
 
 ## 5) Record Total Amount of Pills Taken This Week <a name="total"></a>
 
@@ -272,8 +275,8 @@ total = total + 1;
 total = total + 2;
 ```
 
-### 5.3) Increase level in Blynk Level H Component <a name="level"></a>
-By adding the code below, the Level H component on Blynk would increase in value as well.
+  ### 5.3) Increase level in Blynk Level H Widget <a name="level"></a>
+By adding the code below, the Level H Widget on Blynk would increase in value as well.
 
 ![image](https://user-images.githubusercontent.com/80112384/139728826-0134e7d9-f655-4adc-958d-0b24f4efe30c.png)
 ```arduino
@@ -282,7 +285,10 @@ if (total == 9){
 }
 Blynk.virtualWrite(V3, total);
 ```
-### add gif/image/video here
+
+The video here may not be too clear, but it shows that the value of the level H widget increased from 0 to 4.
+
+https://user-images.githubusercontent.com/80112384/139739203-b94a7431-db7c-4101-a696-68023afcffad.mp4
 
 [< Back: Tutorial 2 - Clock Display](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial2.md)\
 [> Next: Tutorial 4 - Google Sheets](https://github.com/kempisabelmaddie/IoT_PolyU/blob/main/smartwatch/SmartMedication/Tutorial4.md)
